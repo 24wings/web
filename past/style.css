@@ -1,0 +1,23 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+#peoples{
+    background: lightskyblue;
+    width: 100%;
+}
+.people{
+    width: 100%;
+    padding:10px 0;
+    text-align: center;
+}
+
+.people .name,.people .age, .people .gender{
+    font-size: 150%;
+    color:green;
+    width: 33%;
+    text-align: center;
+}
+

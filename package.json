@@ -1,0 +1,36 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Web前端精通\r # [全部内容](content/index.md)",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/24wings/web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/24wings/web/issues"
+  },
+  "homepage": "https://github.com/24wings/web#readme",
+  "dependencies": {
+    "@types/body-parser": "^0.0.33",
+    "@types/cheerio": "^0.17.31",
+    "@types/express": "^4.0.33",
+    "@types/jquery": "^2.0.34",
+    "@types/method-override": "^0.0.29",
+    "@types/mongoose": "^4.5.41",
+    "@types/node": "^6.0.46",
+    "@types/request": "^0.0.33",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.6",
+    "request": "^2.78.0"
+  }
+}
