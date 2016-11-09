@@ -5,7 +5,7 @@
 **关键字:[First class Function](https://developer.mozilla.org/zh-CN/docs/Glossary/First-class_Function)**
 * 函数将被当作变量对待
 * [可以作为参数传递](#函数作为参数)
-* [可以作为返回值被其他函数返回](#返回函数)
+* [可以作为返回值被其他函数返回](#函数)
 * 可以被当作值指定给一个变量
 
 
@@ -76,6 +76,6 @@ var sort=(a,b,compare){
 # es6与typescript 开启
 * 类型
 
-# 返回函数
+# 函数
 
 
