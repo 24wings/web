@@ -18,3 +18,15 @@ var results = peoples.every(function (person) { return person.age >= 18; });
 // console.log(results)
 var chengnian = peoples.some(function (person, index, persons) { return person.age >= 18; });
 console.log(chengnian);
+console.log(new Date().getMonth());
+// var num = new Date().getTime();
+// console.log(num)
+// console.log(new Date(1478764125165));
+// new Date().
+var wantDate = new Date();
+wantDate.setFullYear(2010);
+wantDate.setMonth(4);
+wantDate.setDate(5);
+console.log(wantDate);
+var persons = [{ name: 'a', age: 23 }, { name: 'b', age: 13 }];
+console.dir(persons);
