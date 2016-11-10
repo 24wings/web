@@ -20,6 +20,7 @@ function calc(action) {
     }
 }
 
+
 var addFn = calc('add');
 console.log(addFn(2, 3));
 var powFn = calc('pow');
