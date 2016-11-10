@@ -21,10 +21,12 @@ function compare(a,b){
 }
 
 // 函数作为参数传入,通常用于回调,简称回调函数
-var compareTwoNumb= function (a,b,compare){
+var compareTwoNumb= function (a,b,compar){
     // 使用传入的函数
-        compare(a,b);
+        compar(a,b);
 }
+ 
+compareTwoNumb(3,2,compare);
 
 // 完成自己的array.sort()
 ```
