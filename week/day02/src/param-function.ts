@@ -1,12 +1,40 @@
-var sayHello = function () {
-    console.log('hello');
+// callback 回调
+function A(callback) {
+
+    console.log(callback);
+    callback();//B()
 }
 
-//  () invoke 调用 
-/**
- * @param {Function} func 是一个函数参数
- */
-var execute = function (func) {
-    func();
+function B() {
+    console.log('b');
 }
-execute(sayHello);
+
+A(B);
+
+
+
+// =============
+
+
+
+
+// sort(arrays,compareFn);
+
+function C(func) {
+    var a = 1, b = 2;
+    func(a, b);
+}
+
+C(function (a, b) {
+    console.log(a + b);
+});
+
+
+
+var arr = [2, 3, 9, 4, 5];
+
+function compareTo(a, b) {
+    return b - a;
+}
+arr.sort(compareTo);
+console.log(arr)
