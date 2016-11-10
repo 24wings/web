@@ -1,12 +1,10 @@
 function doThing() {
     return function () {
         console.log('say hello');
-    }
+    };
 }
 var something = doThing();
 something();
-
-
 function calc(action) {
     switch (action) {
         case 'add':
@@ -19,9 +17,7 @@ function calc(action) {
             };
     }
 }
-
 var addFn = calc('add');
 console.log(addFn(2, 3));
 var powFn = calc('pow');
 console.log(powFn(2, 3));
-
