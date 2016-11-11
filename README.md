@@ -7,4 +7,10 @@ Web前端精通
 * 帐号:
 * 密码:
 
-配置
+git的使用
+
+cd d:/
+mkdir workspace
+cd workspace
+git clone 你的github项目
+dir

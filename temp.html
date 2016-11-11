@@ -1,0 +1,4351 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class=" book-new-nav">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Expires" content="Sun, 6 Mar 2005 01:00:00 GMT">
+    
+  <meta http-equiv="mobile-agent" content="format=xhtml; url=http://m.douban.com/book/">
+  <meta name="keywords" content="豆瓣读书,新书速递,畅销书,书评,书单"/>
+  <meta name="description" content="记录你读过的、想读和正在读的书，顺便打分，添加标签及个人附注，写评论。根据你的口味，推荐适合的书给你。" />
+  <meta name="verify-v1" content="EYARGSAVd5U+06FeTmxO8Mj28Fc/hM/9PqMfrlMo8YA=">
+  <meta property="wb:webmaster" content="7c86191e898cd20d">
+  <meta property="qc:admins" content="1520412177364752166375">
+
+    <title>
+    豆瓣读书
+</title>
+    <link rel="shortcut icon" href="https://img3.doubanio.com/favicon.ico"
+      type="image/x-icon">
+    <script>
+      var Douban = {}, Book = {}
+      var Do=function(){Do.actions.push([].slice.call(arguments))};Do.ready=function(){Do.actions.push([].slice.call(arguments))},Do.add=Do.define=function(o,l){Do.mods[o]=l},Do.global=function(){Do.global.mods=Array.concat(Do.global.mods,[].slice.call(arguments))},Do.global.mods=[],Do.mods={},Do.actions=[];
+    </script>
+    
+
+<script src="https://img3.doubanio.com/f/book/6a411a14e088636db2bc428ec7125b476791e3fd/js/book/lib/define.js"></script>
+<script>
+  define.ns('Book')
+  define.config({
+    'jquery': '$'
+  , 'piwik': 'Piwik'
+  , 'mod/ga': 'Book.ga'
+  , 'mod/ajax': 'Book.ajax'
+  , 'mod/cookie': 'Book.cookie'
+  })
+
+  Do.add('mod/cookie', {
+    path: 'https://img3.doubanio.com/f/book/6542b92d560cd64f30c9248e6c35499cc11c0d29/js/book/mod/cookie.js'
+  , type: 'js'
+  })
+
+  Do.add('mod/ajax', {
+    path: 'https://img3.doubanio.com/f/book/b455e168dbfaa03597d2e336c3f56e32843361c9/js/book/mod/ajax.js'
+  , requires: ['mod/cookie']
+  , type: 'js'
+  })
+
+  Do.add('mod/ga', {
+    path: 'https://img3.doubanio.com/f/book/42544a42ebd9be4aee64b3a8c6df1a15a8c8e020/js/book/mod/ga.js'
+  , type: 'js'
+  })
+</script>
+
+    
+<script>!function(e){var o=function(o,n,t){var c,i,r=new Date;n=n||30,t=t||"/",r.setTime(r.getTime()+24*n*60*60*1e3),c="; expires="+r.toGMTString();for(i in o)e.cookie=i+"="+o[i]+c+"; path="+t},n=function(o){var n,t,c,i=o+"=",r=e.cookie.split(";");for(t=0,c=r.length;t<c;t++)if(n=r[t].replace(/^\s+|\s+$/g,""),0==n.indexOf(i))return n.substring(i.length,n.length).replace(/\"/g,"");return null},t=e.write,c={"douban.com":1,"douban.fm":1,"google.com":1,"google.cn":1,"googleapis.com":1,"gmaptiles.co.kr":1,"gstatic.com":1,"gstatic.cn":1,"google-analytics.com":1,"googleadservices.com":1},i=function(e,o){var n=new Image;n.onload=function(){},n.src="https://www.douban.com/j/except_report?kind=ra022&reason="+encodeURIComponent(e)+"&environment="+encodeURIComponent(o)},r=function(o){try{t.call(e,o)}catch(e){t(o)}},a=/<script.*?src\=["']?([^"'\s>]+)/gi,g=/http:\/\/(.+?)\.([^\/]+).+/i;e.writeln=e.write=function(e){var t,l=a.exec(e);return l&&(t=g.exec(l[1]))?c[t[2]]?void r(e):void("tqs"!==n("hj")&&(i(l[1],location.href),o({hj:"tqs"},1),setTimeout(function(){location.replace(location.href)},50))):void r(e)}}(document);
+</script>
+
+    
+  
+  <link href="https://img3.doubanio.com/f/book/4b96ff7f14f7e4afc66325721537b53f3a647545/css/book/master.css" rel="stylesheet" type="text/css">
+
+  <style type="text/css"></style>
+  <script>var _head_start = new Date();</script>
+  
+
+  
+  <script>
+    define.config({
+      'ui/slide': 'Book.slide'
+    , 'ui/bubble': 'Book.Bubble'
+    })
+    Do.add('book/index', { path: 'https://img3.doubanio.com/f/book/69588b19ecccbc623d074865c399b1bc5a57b058/js/book/index.js' })
+    Do.add('ui/slide', { path: 'https://img3.doubanio.com/f/book/2f473e3eae1803f9e743ea632607ad4f9677fb3b/js/book/ui/slide.js' })
+    Do.add('ui/bubble', { path: 'https://img3.doubanio.com/f/book/95c407df830e0ab6119ed622ee42033acf0af414/js/book/ui/bubble.js' })
+    Do.add('widget/tabs', { path: 'https://img3.doubanio.com/f/book/1c240c18b397f6c8583254c27b9c1f1ecebb6075/js/book/widget/tabs.js' })
+    Do('book/index')
+  </script>
+  <script type='text/javascript'>
+    var _vds = _vds || [];
+    (function(){ _vds.push(['setAccountId', '22c937bbd8ebd703f2d8e9445f7dfd03']);
+        _vds.push(['setCS1','user_id','0']);
+            (function() {var vds = document.createElement('script');
+                vds.type='text/javascript';
+                vds.async = true;
+                vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(vds, s);
+            })();
+    })();
+</script>
+
+  
+  <script type='text/javascript'>
+    var _vwo_code=(function(){
+      var account_id=249272,
+          settings_tolerance=2000,
+          library_tolerance=2500,
+          use_existing_jquery=false,
+          // DO NOT EDIT BELOW THIS LINE
+          f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  </script>
+
+
+  <script></script>
+  <link rel="stylesheet" href="https://img3.doubanio.com/misc/mixed_static/7fd1650c1e3c1f2d.css">
+
+  </head>
+  <body>
+    
+  <script>var _body_start = new Date();</script>
+  
+  
+  
+  
+
+
+
+
+
+
+<div id="db-global-nav" class="global-nav">
+  <div class="bd">
+    
+
+
+
+
+
+<div class="top-nav-info">
+      
+      <a href="https://www.douban.com/accounts/login?source=book" class="nav-login" rel="nofollow">登录</a>
+      <a href="https://www.douban.com/accounts/register?source=book" class="nav-register" rel="nofollow">注册</a>
+</div>
+
+
+    <div class="top-nav-doubanapp">
+        
+        <a href="https://www.douban.com/doubanapp/app?channel=top-nav" class="lnk-doubanapp">下载豆瓣客户端</a>
+        <div id="top-nav-appintro" class="more-items">
+            <p class="appintro-title">豆瓣</p>
+            <p class="slogan">我们的精神角落</p>
+            <p class="qrcode">
+                扫码直接下载
+            </p>
+            <div class="download">
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=iOS">iPhone</a>
+                <span>·</span>
+                <a href="https://www.douban.com/doubanapp/redirect?channel=top-nav&amp;direct_dl=1&amp;download=Android" class="download-android">Android</a>
+            </div>
+        </div>
+        <div id="doubanapp-tip">
+            <a href="https://www.douban.com/doubanapp/app?channel=qipao" class="tip-link">豆瓣 4.0 全新发布</a>
+            <a href="javascript: void 0;" class="tip-close">×</a>
+        </div>
+    </div>
+
+    <div class="global-nav-items">
+      <ul>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-main&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              豆瓣
+            </a>
+            </li>
+          
+            
+            <li class="on">
+            <a href="https://book.douban.com/" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-book&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              读书
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://movie.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-movie&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              电影
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://music.douban.com/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-music&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              音乐
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/location/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-location&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              同城
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://www.douban.com/group/" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-group&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              小组
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://read.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-read&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              阅读
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://douban.fm/?from_=shire_top_nav" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-fm&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              FM
+            </a>
+            </li>
+          
+            
+            <li class="">
+            <a href="https://dongxi.douban.com/?dcs=top-nav&amp;dcm=douban" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-commodity&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              东西
+            </a>
+            </li>
+          
+            
+            <li class=" market-tip">
+            <a href="https://market.douban.com/?utm_campaign=douban_top_nav&amp;utm_source=douban&amp;utm_medium=pc_web" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-market&#34;,&#34;uid&#34;:&#34;0&#34;}">
+              <img src="https://img3.doubanio.com/f/shire/49361dd62c006b17aca974760c2f63daad7d0a8b/pics/nav/new-market-tip.png"/>
+              市集
+            </a>
+            </li>
+          
+            <li>
+              <a href="#more" class="bn-more"><span>更多</span></a>
+              <div class="more-items">
+                <table cellpadding="0" cellspacing="0">
+                    
+                    <tr><td><a href="https://moment.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-moment&#34;,&#34;uid&#34;:&#34;0&#34;}">一刻</a></td></tr>
+                    
+                    <tr><td><a href="https://ypy.douban.com" target="_blank" data-moreurl-dict="{&#34;from&#34;:&#34;top-nav-click-ypy&#34;,&#34;uid&#34;:&#34;0&#34;}">豆瓣摄影</a></td></tr>
+                </table>
+              </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+  
+  
+
+
+
+
+
+
+
+
+<div id="db-nav-book" class="nav">
+  <div class="nav-wrap">
+    <div class="nav-primary">
+      <div class="nav-logo">
+        <a href="https://book.douban.com">豆瓣读书</a>
+      </div>
+      <div class="nav-search">
+        <form action="https://book.douban.com/subject_search" method="get">
+          <fieldset>
+            <legend>搜索：</legend>
+            <label for="inp-query">书名、作者、ISBN</label>
+            <div class="inp">
+              <input id="inp-query" name="search_text" size="22" maxlength="60"
+                value="">
+            </div>
+            <div class="inp-btn">
+              <input type="submit" value="搜索">
+            </div>
+            <input type="hidden" name="cat" value="1001">
+          </fieldset>
+        </form>
+        <style>
+            .nav-search,
+            .nav .nav-primary {
+                overflow: visible !important;
+            }
+
+            .nav-search {
+                margin-left: 145px;
+            }
+        </style>
+      </div>
+    </div>
+  </div>
+  <div class="nav-secondary">
+    
+    <ul class="nav-items">
+      <li
+        class="nav-item-first"
+      ><a href="https://book.douban.com/tag/?icn=index-nav">分类浏览</a></li>
+      
+      <li class="book-cart ">
+        <a href="https://book.douban.com/cart?icn=index-nav">购书单</a>
+      </li>
+      <li>
+        <a href="https://read.douban.com/ebooks/?dcs=book-nav&amp;dcm=douban" target="_blank">电子图书</a>
+      </li>
+      <li>
+        <a href="https://market.douban.com/book?platform=web&amp;channel=book_nav">纸书</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+  <script type="text/template" id="suggest-item">
+    <li class="item"><a href="#">{{= item}}</a></li>
+  </script>
+  
+  
+
+
+
+  <div id="wrapper">
+    
+  <!-- douban ad begin -->
+  <div id="dale_book_home_top_super_banner" class="ad-placeholder" style="margin: -18px 0 18px;">
+  </div>
+  <!-- douban ad end -->
+
+    
+  <div id="content">
+    
+
+    <div class="grid-16-8 clearfix">
+      
+      <div class="article">
+  
+  
+
+  
+  
+  <div class="section books-express ">
+    <div class="hd">
+      
+  <h2 class=''>
+    <span class="">新书速递</span>
+      <span class="link-more">
+        <a class="" href="/latest?icn=index-latestbook-all"
+          >更多»</a>
+      </span>
+  </h2>
+
+      <div class="slide-controls">
+        <ol class="slide-dots">
+          <li><a data-index="1" href="#" class=""></a></li>
+          <li><a data-index="2" href="#" class=""></a></li>
+          <li><a data-index="3" href="#" class=""></a></li>
+          <li><a data-index="4" href="#" class=""></a></li>
+        </ol>
+        <div class="slide-btns">
+          <a href="#" class="prev">&#8249;</a>
+          <a href="#" class="next">&#8250;</a>
+        </div>
+      </div>
+    </div>
+    <div class="bd">
+      <div class="carousel">
+        <div class="slide-list">
+          
+  
+    <ul class="list-col list-col5 list-express slide-item">
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26892411/?icn=index-editionrecommend" title="人类要是没有爱情就好了">
+                <img src="https://img3.doubanio.com/lpic/s29095014.jpg" class=""
+                  width="106px" height="158px" alt="人类要是没有爱情就好了">
+              </a>
+            </div>
+                <div class="intervenor-info">
+                    <img src="https://img3.doubanio.com/f/book/ef040178fab1770d60e3f2f12ba4c7aa70714396/pics/book/partner/jd_recommend.png" class='jd-icon' width="16" height="16"/> 
+                    <span>推荐</span>
+                </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26892411/?icn=index-editionrecommend"
+                  title="人类要是没有爱情就好了">人类要是没有爱情就好了</a>
+              </div>
+              <div class="author">
+                邵艺辉（@红拂夜奔不复还）
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  人类要是没有爱情就好了
+                </h4>
+                <p>
+                  <span class="author">
+                    邵艺辉（@红拂夜奔不复还）
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-12
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京联合出版公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  摇滚音乐家、导演崔健、《北京遇上西雅图》编剧、导演薛晓路联袂推荐
+本书是人气作者、高颜值女编剧邵艺辉（@红拂夜奔不复还）首部短篇小说集。
+收入发表于「ONE·一个」App超高人气《一生要爱多少人》《忍不住》《一夜情的危险》《白贞贞》全部作品，及作者全新作品《不再掩饰》《 报警器》《哥德巴赫猜想》等。
+邵艺辉的小说以充满辨识感的语言风格和深厚的编剧功...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26871656/?icn=index-editionrecommend" title="哈利·波特与被诅咒的孩子">
+                <img src="https://img3.doubanio.com/lpic/s29121750.jpg" class=""
+                  width="106px" height="158px" alt="哈利·波特与被诅咒的孩子">
+              </a>
+            </div>
+                <div class="intervenor-info">
+                    <img src="https://img3.doubanio.com/f/book/ef040178fab1770d60e3f2f12ba4c7aa70714396/pics/book/partner/jd_recommend.png" class='jd-icon' width="16" height="16"/> 
+                    <span>推荐</span>
+                </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26871656/?icn=index-editionrecommend"
+                  title="哈利·波特与被诅咒的孩子">哈利·波特与被诅咒的孩子</a>
+              </div>
+              <div class="author">
+                约翰·蒂法尼&nbsp;/&nbsp;杰克·索恩&nbsp;/&nbsp;J.K.罗琳
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  哈利·波特与被诅咒的孩子
+                </h4>
+                <p>
+                  <span class="author">
+                    约翰·蒂法尼&amp;nbsp;杰克·索恩&amp;nbsp;J.K.罗琳
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    人民文学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  时隔九年,哈利•波特带着他的魔法世界重磅回归！
+《哈利•波特与被诅咒的孩子》打破2016年度预售纪录，北美地区两日卖出2,000,000册！
+六大看点
+1.哈利的小儿子阿不思被分院帽分进了斯莱特林，他会适应那里的生活吗？
+2.德拉科•马尔福的儿子斯科皮竟然与阿不思成为了最好的朋友，这是真正的友情还是另有预谋？
+3．伏地魔的女儿出现了……她将履行怎样的使命？她是否会成...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26895988/?icn=index-editionrecommend" title="学习之道">
+                <img src="https://img5.doubanio.com/lpic/s29105126.jpg" class=""
+                  width="106px" height="158px" alt="学习之道">
+              </a>
+            </div>
+                <div class="intervenor-info">
+                    <img src="https://img3.doubanio.com/f/book/ef040178fab1770d60e3f2f12ba4c7aa70714396/pics/book/partner/jd_recommend.png" class='jd-icon' width="16" height="16"/> 
+                    <span>推荐</span>
+                </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26895988/?icn=index-editionrecommend"
+                  title="学习之道">学习之道</a>
+              </div>
+              <div class="author">
+                [美]芭芭拉•奥克利（Barbara Oakley）
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  学习之道
+                </h4>
+                <p>
+                  <span class="author">
+                    [美]芭芭拉•奥克利（Barbara Oakley）
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    机械工业出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  读完一本书，却不记得讲什么？
+美剧看了一箩筐，英语还是没长进？
+公众号、指导书、牛人帖，一个都没落，却还是没有形成自己的学习体系？
+这些都是典型的低质量学习症状。
+不了解学习的原理，就是在无效重复；缺乏有效的学习方法，就是在消耗天赋。
+本书从脑科学和心理学的最新研究出发，跨学科解读学习的原理，提供最全面的学习方法和思维模式：
+大脑如何处理图形、文字、...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26865498/?icn=index-editionrecommend" title="医治受伤的自信">
+                <img src="https://img3.doubanio.com/lpic/s29018001.jpg" class=""
+                  width="106px" height="158px" alt="医治受伤的自信">
+              </a>
+            </div>
+                <div class="intervenor-info">
+                    <img src="https://img3.doubanio.com/f/book/ef040178fab1770d60e3f2f12ba4c7aa70714396/pics/book/partner/jd_recommend.png" class='jd-icon' width="16" height="16"/> 
+                    <span>推荐</span>
+                </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26865498/?icn=index-editionrecommend"
+                  title="医治受伤的自信">医治受伤的自信</a>
+              </div>
+              <div class="author">
+                [法]弗雷德里克•方热 著
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  医治受伤的自信
+                </h4>
+                <p>
+                  <span class="author">
+                    [法]弗雷德里克•方热 著
+                  </span>
+                  /
+                  <span class="year">
+                    2016-8-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    生活·读书·新知三联书店，生活书店出版有限公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  ＞自信是我们人格的一大基本元素，
+＞自信的缺失或扭曲，会让我们在为人处世上疑虑重重，
+＞给我们带来情感和生活上的伤痛，
+＞使我们害怕做错事、 害怕被论断、 害怕爱别人、 害怕被爱……
+＞最终，降低了我们的生活质量。
+本书旨在帮我们从自信受伤导致的恶性循环中释放出来，
+以教学的方式介绍了诸多简便而易行的心理治疗方法，
+这些方法为世界各地的心理专家广泛采用，
+其...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26895518/?icn=index-editionrecommend" title="瞬间的触觉">
+                <img src="https://img1.doubanio.com/lpic/s29103639.jpg" class=""
+                  width="106px" height="158px" alt="瞬间的触觉">
+              </a>
+            </div>
+                <div class="intervenor-info">
+                    <img src="https://img3.doubanio.com/f/book/ef040178fab1770d60e3f2f12ba4c7aa70714396/pics/book/partner/jd_recommend.png" class='jd-icon' width="16" height="16"/> 
+                    <span>推荐</span>
+                </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26895518/?icn=index-editionrecommend"
+                  title="瞬间的触觉">瞬间的触觉</a>
+              </div>
+              <div class="author">
+                王瑶
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  瞬间的触觉
+                </h4>
+                <p>
+                  <span class="author">
+                    王瑶
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    人民邮电出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  《瞬间的触觉》作者王瑶是中国摄影家协会主席，是一位优秀的摄影家，王瑶在从事新闻摄影工作20多年的时间里，拍摄了大量的优秀新闻作品，曾先后获得世界新闻摄影金奖、中国新闻奖、范长江新闻奖等业界众多重要奖项。王瑶因为工作关系曾经到访过十多个国家，本书是王瑶的一本摄影随笔，讲述了王瑶自己拍摄过程中的感想，对照片的分析，以及王瑶的摄影体会和观点。王...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26748177/?icn=index-latestbook-subject" title="黑王子">
+                <img src="https://img3.doubanio.com/lpic/s29071834.jpg" class=""
+                  width="106px" height="158px" alt="黑王子">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26748177/?icn=index-latestbook-subject"
+                  title="黑王子">黑王子</a>
+              </div>
+              <div class="author">
+                [英] 艾丽丝·默多克
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  黑王子
+                </h4>
+                <p>
+                  <span class="author">
+                    [英] 艾丽丝·默多克
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    上海译文出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  《黑王子》是默多克后期最受好评，同时也是最为艰深的作品之一。主人公年近六旬的作家布拉德利意欲逃离都市避隐郊野，就在出发前夕，前妻之弟不期而至，从这一刻起，他便宿命般地陷入了无穷无尽的噩梦之中：前妻的骚扰；被丈夫抛弃的妹妹神经错乱；老友之妻对他暗生情愫；最不可救药的、亦为故事核心的是，他与老友之女发生了不伦之恋，最终冤死狱中。在这部哲学与艺...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26890960/?icn=index-latestbook-subject" title="疗愈美术馆">
+                <img src="https://img1.doubanio.com/lpic/s29091547.jpg" class=""
+                  width="106px" height="158px" alt="疗愈美术馆">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26890960/?icn=index-latestbook-subject"
+                  title="疗愈美术馆">疗愈美术馆</a>
+              </div>
+              <div class="author">
+                [韩] 李沼泳
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  疗愈美术馆
+                </h4>
+                <p>
+                  <span class="author">
+                    [韩] 李沼泳
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    江苏凤凰文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  本书是一个艺术从业者的喃喃低语，她从私人化的角度来讲述自己与那些伟大艺术作品相遇的故事。人生对于每个人来说，都像是一个巨大的迷宫，充满了无数困惑与挣扎，以及各种各样的情绪彼伏。幸好我们有艺术这样的镜子，得以从中照见自己。在寻找自我的漫漫征途中，它们就像天空之中最明亮的星星那样给予指引，让我们不会轻易迷失，它抚平我们的伤口，把源源不断的力量...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26892803/?icn=index-latestbook-subject" title="希腊人左巴">
+                <img src="https://img3.doubanio.com/lpic/s29105304.jpg" class=""
+                  width="106px" height="158px" alt="希腊人左巴">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26892803/?icn=index-latestbook-subject"
+                  title="希腊人左巴">希腊人左巴</a>
+              </div>
+              <div class="author">
+                [希腊] 尼科斯·卡赞扎基斯
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  希腊人左巴
+                </h4>
+                <p>
+                  <span class="author">
+                    [希腊] 尼科斯·卡赞扎基斯
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    云南人民出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  新希腊文学缔造者之一尼科斯•卡赞扎基斯在《希腊人左巴》序言里写道：“如果非要问谁在我心灵中留下的烙印最深，大概可以举出三四位：荷马、柏格森、尼采和左巴。荷马是只高超明亮的眼睛，太阳似的光辉四射，普照万物；柏格森把我从青春时期为之困扰而感到迷惘的哲学问题中解救出来；尼采使我增添了新的苦闷；而左巴教给了我热爱生活和不怕死。”
+在这部伟大作品中，...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26884467/?icn=index-latestbook-subject" title="我甚至希望旅途永无止境">
+                <img src="https://img3.doubanio.com/lpic/s29072062.jpg" class=""
+                  width="106px" height="158px" alt="我甚至希望旅途永无止境">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26884467/?icn=index-latestbook-subject"
+                  title="我甚至希望旅途永无止境">我甚至希望旅途永无止境</a>
+              </div>
+              <div class="author">
+                胡成
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  我甚至希望旅途永无止境
+                </h4>
+                <p>
+                  <span class="author">
+                    胡成
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-24
+                  </span>
+                  /
+                  <span class="publisher">
+                    广东人民出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  蒙古国就在咫尺之外的北方，却又可能是我们永不会踏足的天涯。正如我们渊源如此之深，却又如此陌生。
+陌生的国度，荒凉的国度，一百五十六万平方公里，三百万人口。乌兰巴托向西，孤身向西横贯西蒙古，几座城市，之间是无尽的草原与戈壁。漫长的旅行，漫长的等待，你永远不知道去往下一座城市的长途客车，会在何时出现在哪里。
+晴朗、风雪与沙尘的艰辛旅途，可以安慰艰...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26862626/?icn=index-latestbook-subject" title="克苏鲁神话">
+                <img src="https://img3.doubanio.com/lpic/s29103582.jpg" class=""
+                  width="106px" height="158px" alt="克苏鲁神话">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26862626/?icn=index-latestbook-subject"
+                  title="克苏鲁神话">克苏鲁神话</a>
+              </div>
+              <div class="author">
+                [美] H.P.洛夫克拉夫特
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  克苏鲁神话
+                </h4>
+                <p>
+                  <span class="author">
+                    [美] H.P.洛夫克拉夫特
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    浙江文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  《克苏鲁神话》被誉为20世纪最伟大、最具影响力的恐怖小说体系，作者是H.P.洛夫克拉夫特——或者“爱手艺”。
+假设你的脚边有一只蚂蚁在爬，你不会在意有没有踩死它，因为它太渺小了，是死还是活，对你来说没有分毫影响。在“克苏鲁神话”中描述的远古邪神的眼中，人类就是那只蚂蚁。
+洛夫克拉夫特所倡导的“宇宙主义”，即人类远非世界的主宰者，在尚未探索的未知宇...
+                </p>
+              </div>
+            </div>
+          </li>
+    </ul>
+    <ul class="list-col list-col5 list-express slide-item">
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26835895/?icn=index-latestbook-subject" title="猫的私人词典">
+                <img src="https://img3.doubanio.com/lpic/s28891974.jpg" class=""
+                  width="106px" height="158px" alt="猫的私人词典">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26835895/?icn=index-latestbook-subject"
+                  title="猫的私人词典">猫的私人词典</a>
+              </div>
+              <div class="author">
+                [法] 弗雷德里克•维杜（Frédéric Vitoux）
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  猫的私人词典
+                </h4>
+                <p>
+                  <span class="author">
+                    [法] 弗雷德里克•维杜（Frédéric Vitoux）
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    华东师范大学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  【关于猫】
+猫爱吃鱼，却不想弄湿爪子。 ——公元10世纪谚语
+当我和我的母猫玩耍时，谁知道是它在打发我的时间呢，还是我在打发它的时间？我们彼此用滑稽的动作来交谈。如果说有时候是我先开始，或我拒绝和它玩，同样有时候是它。 ——蒙田
+天空在它的眼里，地狱在它 的心中。 —— 巴尔扎克
+所有猫都有一死，苏格拉底也有一死，所以苏格拉底是一只猫。 ——尤内斯库
+我相信...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26879246/?icn=index-latestbook-subject" title="飘二代">
+                <img src="https://img5.doubanio.com/lpic/s29124386.jpg" class=""
+                  width="106px" height="158px" alt="飘二代">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26879246/?icn=index-latestbook-subject"
+                  title="飘二代">飘二代</a>
+              </div>
+              <div class="author">
+                王若冲
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  飘二代
+                </h4>
+                <p>
+                  <span class="author">
+                    王若冲
+                  </span>
+                  /
+                  <span class="year">
+                    2016-9
+                  </span>
+                  /
+                  <span class="publisher">
+                    长江文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  自小出生在广东的李锦怡，从幼儿园时就开始了“飘二代”的生活，没有北京户口的她，随父母来到北京求学生活。北京名校的生活，注定充实丰富而青春激荡。语言风波、师生互整、官二代、富二代、考试黑幕、学霸自杀、早恋怀孕……李锦怡或亲身经历，或耳闻目睹，见证了北京新新一代的青春成长。父辈远离故土，自己又远离故土，不断地更换环境，更换同学老师，更换朋友，...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26883447/?icn=index-latestbook-subject" title="在人群中消失的日子">
+                <img src="https://img3.doubanio.com/lpic/s29069523.jpg" class=""
+                  width="106px" height="158px" alt="在人群中消失的日子">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26883447/?icn=index-latestbook-subject"
+                  title="在人群中消失的日子">在人群中消失的日子</a>
+              </div>
+              <div class="author">
+                沈熹微
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  在人群中消失的日子
+                </h4>
+                <p>
+                  <span class="author">
+                    沈熹微
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    人民文学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  无论是每次开门时笑脸进来的小姑娘，亦或者梦想只是拥有一间五十平房子的好友，习惯把糖让给女儿吃的妈妈……这些须臾瞬间的动容，是沈熹微记录下来的“黑暗之光”，在最漫长的日常里，理清着真正值得我们坚持下去的理由。
+慢慢地看这本书，可以试着一天一篇，一起沉下心来过一段 宁静自省的日子，整理自己，修复自己，在与生命中每一天的温柔相处中，消解掉那些累积...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26870406/?icn=index-latestbook-subject" title="湖边小屋">
+                <img src="https://img3.doubanio.com/lpic/s29054950.jpg" class=""
+                  width="106px" height="158px" alt="湖边小屋">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26870406/?icn=index-latestbook-subject"
+                  title="湖边小屋">湖边小屋</a>
+              </div>
+              <div class="author">
+                [加拿大]威廉·扬
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  湖边小屋
+                </h4>
+                <p>
+                  <span class="author">
+                    [加拿大]威廉·扬
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京十月文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  一部带着人走出困境的伟大小说！除了感动，是伤痛；除了伤痛，是生命的宁静与辽阔。
+不是悬疑小说，不是推理小说，却更惊心动魄！
+野营生活刚开了个头，小女儿梅西就不见了，湖边的小屋里，只有梅西的红色连衣裙，裙子上血迹斑斑。
+失去了女儿，麦克的天空从此变得暗淡，完全坠入了黑暗之河。他愤怒、自责，甚至对信仰了多年的上帝也疑虑重重。
+三年后的一个风雪天里，麦...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26865408/?icn=index-latestbook-subject" title="历史文化的全息图像">
+                <img src="https://img3.doubanio.com/lpic/s29028901.jpg" class=""
+                  width="106px" height="158px" alt="历史文化的全息图像">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26865408/?icn=index-latestbook-subject"
+                  title="历史文化的全息图像">历史文化的全息图像</a>
+              </div>
+              <div class="author">
+                李劼
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  历史文化的全息图像
+                </h4>
+                <p>
+                  <span class="author">
+                    李劼
+                  </span>
+                  /
+                  <span class="year">
+                    2016-9
+                  </span>
+                  /
+                  <span class="publisher">
+                    理想国 | 广西师范大学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  汉语史上有两本天书，《易经》和《红楼梦》。重新发现“红楼”，重新发现“中国”……《红楼梦》的问世，既标记着对以往历史的颠覆，又标记着一种人文精神的崛起。中国历史文化的全息性，得以在《红楼梦》里获得淋漓尽致的呈现。
+贾宝玉的死亡准备，林黛玉的爱情期待，薛宝钗的生存策略，补天者的意兴阑珊，老祖宗的牌桌阴影，大观园内的女儿世界，大观园外的男人世界...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26870405/?icn=index-latestbook-subject" title="龙头凤尾">
+                <img src="https://img1.doubanio.com/lpic/s29126758.jpg" class=""
+                  width="106px" height="158px" alt="龙头凤尾">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26870405/?icn=index-latestbook-subject"
+                  title="龙头凤尾">龙头凤尾</a>
+              </div>
+              <div class="author">
+                马家辉
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  龙头凤尾
+                </h4>
+                <p>
+                  <span class="author">
+                    马家辉
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    四川文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  他们是互不靠近的船舶，却在同一个江湖。
+在这样的时局里，每个人都背负着世界的混乱，以及混乱里的怨怼。
+跟你对赌的并非其他，而是命运，只是命运。
+一九三六年的中国，时局纷乱不明，内战外战一触即发，本是广东乡下一个木匠的陆北才被抛进时代的浪涛里，揉搓、碾压，沉沉浮浮。
+离家去陈济棠部队当兵，无意间窥知兄弟的秘密，差点丢了性命；偷渡到香港卖苦力讨生活，...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26883144/?icn=index-latestbook-subject" title="清晰表达的艺术：打造高效的职场沟通">
+                <img src="https://img1.doubanio.com/lpic/s29068497.jpg" class=""
+                  width="106px" height="158px" alt="清晰表达的艺术：打造高效的职场沟通">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26883144/?icn=index-latestbook-subject"
+                  title="清晰表达的艺术：打造高效的职场沟通">清晰表达的艺术：打造高效的职场沟通</a>
+              </div>
+              <div class="author">
+                [德] 多米尼克·穆特勒
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  清晰表达的艺术：打造高效的职场沟通
+                </h4>
+                <p>
+                  <span class="author">
+                    [德] 多米尼克·穆特勒
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-31
+                  </span>
+                  /
+                  <span class="publisher">
+                    九州出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  很多人都认可直截了当的态度，但只有少数人会这么做，为什么？这是因为直截了当让人不舒服，有话直说会威胁到眼下的安乐窝。
+《清晰表达的艺术》一书指出了职场沟通中常见的弊病——用词含糊、避重就轻、见风使舵、无限拖延，趋炎附势等，并列举大量的实例，说明这些弊病会给企业发展带来怎样的消极影响。
+本书将指导我们如何走出沟通的舒适区域，如何将清晰表达变成一...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26886310/?icn=index-latestbook-subject" title="有匪1">
+                <img src="https://img3.doubanio.com/lpic/s29087935.jpg" class=""
+                  width="106px" height="158px" alt="有匪1">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26886310/?icn=index-latestbook-subject"
+                  title="有匪1">有匪1</a>
+              </div>
+              <div class="author">
+                priest
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  有匪1
+                </h4>
+                <p>
+                  <span class="author">
+                    priest
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    湖南文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  晋江超100亿积分、大神级作家Priest古言小说扛鼎之作
+终有一天，你会跨过静谧无声的洗墨江，离开群山环抱的旧桃源，来到无边阴霾的夜空之下。
+你会目睹无数不可攀爬之山相继倾覆，不可逾越之海干涸成田，
+你要记得，你的命运悬在刀尖上，而刀尖须得永远向前。
+愿你在冷铁卷刃前，得以窥见天光。
+二十年前，“南刀”李徽奉旨为匪，建蜀山四十八寨，收天下落魄之人。
+二十年...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26877306/?icn=index-latestbook-subject" title="微习惯">
+                <img src="https://img3.doubanio.com/lpic/s29051384.jpg" class=""
+                  width="106px" height="158px" alt="微习惯">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26877306/?icn=index-latestbook-subject"
+                  title="微习惯">微习惯</a>
+              </div>
+              <div class="author">
+                [美]斯蒂芬·盖斯&nbsp;/&nbsp;Stephen Guise
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  微习惯
+                </h4>
+                <p>
+                  <span class="author">
+                    [美]斯蒂芬·盖斯&amp;nbsp;Stephen Guise
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    后浪出版公司·江西人民出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  1天1个俯卧撑
+1天1页书
+1天50字
+每天只做一点点的无负担习惯策略
+………………
+※编辑推荐※
+★ 从2012年末开始，斯蒂芬·盖斯每天至少做1个俯卧撑，这成了他培养的第一个微习惯。两年后，他拥有了梦想中的体格，写的文章是过去的4倍，读的书是过去的10倍。微习惯策略比 他用过的一切习惯策略都有效，于是便有了这本书。
+★ 微习惯是一种非常微小的积极行为，你需要每天强...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26882320/?icn=index-latestbook-subject" title="嗨，好久不见">
+                <img src="https://img3.doubanio.com/lpic/s29066812.jpg" class=""
+                  width="106px" height="158px" alt="嗨，好久不见">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26882320/?icn=index-latestbook-subject"
+                  title="嗨，好久不见">嗨，好久不见</a>
+              </div>
+              <div class="author">
+                顾前
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  嗨，好久不见
+                </h4>
+                <p>
+                  <span class="author">
+                    顾前
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-20
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京十月文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  【内容简介】
+打打牌、唠唠嗑，关注一下朋友圈里心思活络的男女——
+作者笔下的这些人物，认真地忙碌着看似无关紧要荒废时间的琐事。
+别人的成功与他们无关，他们在自己的世界里悠然自得。
+这些故事，仿佛三五好友围炉夜话，家长里短，夹杂着回忆往事时温柔的伤感。
+日子轻松也好，沉重也罢，总有一股明亮跳跃的火苗，
+温暖着他们困顿的身体和疲惫的灵魂。
+------------------------...
+                </p>
+              </div>
+            </div>
+          </li>
+    </ul>
+    <ul class="list-col list-col5 list-express slide-item">
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/24292295/?icn=index-latestbook-subject" title="豆腐匠的哲学">
+                <img src="https://img1.doubanio.com/lpic/s29124388.jpg" class=""
+                  width="106px" height="158px" alt="豆腐匠的哲学">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/24292295/?icn=index-latestbook-subject"
+                  title="豆腐匠的哲学">豆腐匠的哲学</a>
+              </div>
+              <div class="author">
+                [日] 小津安二郎
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  豆腐匠的哲学
+                </h4>
+                <p>
+                  <span class="author">
+                    [日] 小津安二郎
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    新星出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  最具日本特色的世界电影大师小津安二郎 自传性随笔
+.
+独家收录《东京物语》全剧本
+.
+他是最具有日本特色的导演，独特的风格被称为“小津调”。1923年，小津安二郎以助理身份进入电影行业，十年后凭借《心血来潮》被《电影旬报》评为年度最佳电影。此后，《晚春》《麦秋》均被列入日本电影名片200部，《彼岸花》《秋日和》《秋刀鱼之味》等名片亦获奖无数，其传世之作《 ...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26878104/?icn=index-latestbook-subject" title="痛苦的中国人">
+                <img src="https://img3.doubanio.com/lpic/s29095155.jpg" class=""
+                  width="106px" height="158px" alt="痛苦的中国人">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26878104/?icn=index-latestbook-subject"
+                  title="痛苦的中国人">痛苦的中国人</a>
+              </div>
+              <div class="author">
+                [奥] 彼得·汉德克
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  痛苦的中国人
+                </h4>
+                <p>
+                  <span class="author">
+                    [奥] 彼得·汉德克
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    上海人民出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  《痛苦的中国人》具有鲜明的汉德克风格，以近乎挽歌式的深情描写和无所畏惧的正义良知，展现出一个不同于主流媒体的南斯拉夫和塞尔维亚，既有文学上的探索和实验，也有政治领域的思考和立场，是全面了解汉德克的思想和风格的不可错过的作品。
+【 内容简介】
+《痛苦的中国人》收录了汉德克的四部作品，包括小说《痛苦的中国人》和三篇游记，即《梦想者告别第九王国》《...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26888764/?icn=index-latestbook-subject" title="寂然的狂喜">
+                <img src="https://img1.doubanio.com/lpic/s29130998.jpg" class=""
+                  width="106px" height="158px" alt="寂然的狂喜">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26888764/?icn=index-latestbook-subject"
+                  title="寂然的狂喜">寂然的狂喜</a>
+              </div>
+              <div class="author">
+                [爱尔兰] 威廉·巴特勒·叶芝&nbsp;/&nbsp;科尔姆·托宾 理查德·戈尔曼 依婉·伯兰 李昶 等
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  寂然的狂喜
+                </h4>
+                <p>
+                  <span class="author">
+                    [爱尔兰] 威廉·巴特勒·叶芝&amp;nbsp;科尔姆·托宾 理查德·戈尔曼 依婉·伯兰 李昶 等
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    乐府文化/中信出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  ·叶芝诗歌与当代版画艺术的相遇
+·引导读者用耳朵和心灵去聆听叶芝诗歌
+·关于叶芝诗歌的最美图书
+《寂然的狂喜：叶芝的诗与回声》是一部以叶芝的诗歌为母本，33位艺术家各自选取激发他们艺术灵感的叶芝诗歌，进行以版画为主的现代艺术创作，而后将诗歌和被诗歌点燃的现代艺术高度结合 的形式创作出的一部独特的艺 术图书作品。
+2015年是爱尔兰国宝级诗人叶芝诞辰150周...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26871658/?icn=index-latestbook-subject" title="爱有失落时">
+                <img src="https://img3.doubanio.com/lpic/s29071861.jpg" class=""
+                  width="106px" height="158px" alt="爱有失落时">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26871658/?icn=index-latestbook-subject"
+                  title="爱有失落时">爱有失落时</a>
+              </div>
+              <div class="author">
+                [美] 马修·奎克
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  爱有失落时
+                </h4>
+                <p>
+                  <span class="author">
+                    [美] 马修·奎克
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    未读·北京联合出版公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  【编辑推荐】
+★ 并肩J.K.罗琳、斯蒂芬•金、乔治•R•R•马丁跻身好莱坞十大最有影响力的作者，马修·奎克再出佳作。
+★ 继《乌云背后的幸福线》之后，再造版权、IP争抢之势：售出近20国版权，艾玛•斯通 担纲同名电影女主角
+★ 斩获包括美国笔会/海明威文学奖在内的各类 大奖，不负众望，感染全球数上百万读者。
+★ 《华尔街日报》《太阳报》《波士顿环球报》等多国媒体赞...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26905274/?icn=index-latestbook-subject" title="海错图笔记">
+                <img src="https://img1.doubanio.com/lpic/s29133098.jpg" class=""
+                  width="106px" height="158px" alt="海错图笔记">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26905274/?icn=index-latestbook-subject"
+                  title="海错图笔记">海错图笔记</a>
+              </div>
+              <div class="author">
+                张辰亮
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  海错图笔记
+                </h4>
+                <p>
+                  <span class="author">
+                    张辰亮
+                  </span>
+                  /
+                  <span class="year">
+                    2016-12-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    中信出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  海错的“错”，是种类繁多、错杂的意思。
+清代画家兼生物爱好者聂璜绘制的《海错图》，共描绘了300多种生物，几乎涵盖无脊椎动物门和脊索动物门的大部分主要类群，还记载了不少海滨植物，是一本颇具现代博物学风格的奇书。
+但时代所限，书中也有很多不靠谱之处，比如有些动物聂璜未曾亲见，仅根据别人描述绘制的外形，就会有很大失真。关于生物习性的记载，也是真假混...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26872990/?icn=index-latestbook-subject" title="余生，请多指教">
+                <img src="https://img3.doubanio.com/lpic/s29049325.jpg" class=""
+                  width="106px" height="158px" alt="余生，请多指教">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26872990/?icn=index-latestbook-subject"
+                  title="余生，请多指教">余生，请多指教</a>
+              </div>
+              <div class="author">
+                柏林石匠
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  余生，请多指教
+                </h4>
+                <p>
+                  <span class="author">
+                    柏林石匠
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    百花洲文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  曾经以为，自己这辈子都等不到了——世界这么大，我又走得这么慢，要是遇不到良人要怎么办？
+早过了“全球三十几亿男人，中国七亿男人，天涯何处无芳草”的猖狂岁月，越来越清楚，循规蹈矩的生活中，我们能熟悉进而深交的异性实在太有限了，有限到我都做好了“接受他人的牵线，找个适合的男人慢慢煨熟，再平淡无奇地进入婚姻”的准备，却在生命意外的拐弯处迎来自己的...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26864166/?icn=index-latestbook-subject" title="声律启蒙：吴冠中插图珍藏版">
+                <img src="https://img1.doubanio.com/lpic/s29011947.jpg" class=""
+                  width="106px" height="158px" alt="声律启蒙：吴冠中插图珍藏版">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26864166/?icn=index-latestbook-subject"
+                  title="声律启蒙：吴冠中插图珍藏版">声律启蒙：吴冠中插图珍藏版</a>
+              </div>
+              <div class="author">
+                [清]车万育等/著&nbsp;/&nbsp;吴冠中/绘
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  声律启蒙：吴冠中插图珍藏版
+                </h4>
+                <p>
+                  <span class="author">
+                    [清]车万育等/著&amp;nbsp;吴冠中/绘
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    中信出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  【最美音韵——《声律启蒙》】
+经典国学诵读佳作，为训练儿童作诗对句、掌握声韵格律的最佳启蒙读物。
+以音韵分编，包罗万象。虚实结合，应对自如，读来琅琅上口，妙不可言。文学性不输古代诗词歌赋，独具一格，流行于世。
+“云对雨，雪对风，晚照对晴空。
+三尺剑，六钧弓，岭北对江东。
+………………”
+❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀
+【最...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26895181/?icn=index-latestbook-subject" title="贵圈">
+                <img src="https://img1.doubanio.com/lpic/s29103169.jpg" class=""
+                  width="106px" height="158px" alt="贵圈">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26895181/?icn=index-latestbook-subject"
+                  title="贵圈">贵圈</a>
+              </div>
+              <div class="author">
+                陈野
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  贵圈
+                </h4>
+                <p>
+                  <span class="author">
+                    陈野
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京联合出版公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  01 一本夹带干货的职场轻小说，写了一个年轻创意人的失败史，一位屌丝任新蜂的逆袭史，一群4A广告人的逗B史。狗血与热血齐飞 ，脑洞共吐槽一册。
+02 NewbeeRen 是本书的主人公，也是一个人气公众号，迅速积累数十万粉丝，出产多篇十万+爆文，脑洞很大，干货很多，吐槽很污，被无数人深夜转发点赞。然而，NewbeeRen到底是神马？
+03 窝在一家微弱型广告公司混吃等死...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26889848/?icn=index-latestbook-subject" title="山海经全译">
+                <img src="https://img1.doubanio.com/lpic/s29087849.jpg" class=""
+                  width="106px" height="158px" alt="山海经全译">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26889848/?icn=index-latestbook-subject"
+                  title="山海经全译">山海经全译</a>
+              </div>
+              <div class="author">
+                袁珂 译注
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  山海经全译
+                </h4>
+                <p>
+                  <span class="author">
+                    袁珂 译注
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京联合出版公司·后浪出版公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  读懂《山海经》的权威实用版本
+★ 神话学大师袁珂先生在《山海经校注》的基础上，精炼了过于繁琐的学术性注释，增加了全文的白话翻译，将博大深奥的《山海经》变得浅显易读。
+★ 作为《山海经》译注的权威版本，全译本重视学术性和资料性，更强调了通俗性，对于读者来说更为实用。
+《山海经》作为研究中国上古社会、领略古代神话传奇的珍贵史料，对于广大读者来说，一直...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26863797/?icn=index-latestbook-subject" title="逃离">
+                <img src="https://img3.doubanio.com/lpic/s29040872.jpg" class=""
+                  width="106px" height="158px" alt="逃离">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26863797/?icn=index-latestbook-subject"
+                  title="逃离">逃离</a>
+              </div>
+              <div class="author">
+                [加] 艾丽丝·门罗
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  逃离
+                </h4>
+                <p>
+                  <span class="author">
+                    [加] 艾丽丝·门罗
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京十月文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  为了获得独立和完整的自我，
+我们逃离沉闷的家庭、僵化的感情，
+逃离熟悉的人群、令人窒息的生活……
+为此，我们付出代价，遭受混乱，造成伤害
+2013年诺奖得主艾丽丝·门罗最经典、最受读者喜爱的作品，中文版累积销量已超70万册！
+《自由》作者乔纳森·弗兰岑长文导读
+对译文进一步修订，装帧精美典雅
+本书获2004年加拿大文学大奖吉勒奖《纽约时报》年度最佳图书
+2008年...
+                </p>
+              </div>
+            </div>
+          </li>
+    </ul>
+    <ul class="list-col list-col5 list-express slide-item">
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26851889/?icn=index-latestbook-subject" title="德语七人诗选">
+                <img src="https://img1.doubanio.com/lpic/s29089717.jpg" class=""
+                  width="106px" height="158px" alt="德语七人诗选">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26851889/?icn=index-latestbook-subject"
+                  title="德语七人诗选">德语七人诗选</a>
+              </div>
+              <div class="author">
+                歌德&nbsp;/&nbsp;荷尔德林&nbsp;/&nbsp;海涅&nbsp;/&nbsp;尼采&nbsp;/&nbsp;格奥尔格&nbsp;/&nbsp;里尔克&nbsp;/&nbsp;布莱希特
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  德语七人诗选
+                </h4>
+                <p>
+                  <span class="author">
+                    歌德&amp;nbsp;荷尔德林&amp;nbsp;海涅&amp;nbsp;尼采&amp;nbsp;格奥尔格&amp;nbsp;里尔克&amp;nbsp;布莱希特
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-15
+                  </span>
+                  /
+                  <span class="publisher">
+                    中信出版集团/楚尘文化
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  █编辑推荐
+★歌德、荷尔德林、里尔克、海涅等七位德语大诗人的代表作。
+★被鲁迅称誉为“中国最为杰出的抒情诗人”、著名翻译家冯至的译笔是德语诗歌翻译的典范。
+★冯至对里尔克、歌德、荷尔德林、海涅、尼采等人诗歌的翻译堪称神来之笔。
+★楚尘文化“新陆诗丛·外国卷”丛书又一重磅作品。
+█内容 简介：
+本书所收译诗包括德国、奥地利等国诗人歌德、荷尔德林、海涅、...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26896710/?icn=index-latestbook-subject" title="卡门">
+                <img src="https://img3.doubanio.com/lpic/s29130695.jpg" class=""
+                  width="106px" height="158px" alt="卡门">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26896710/?icn=index-latestbook-subject"
+                  title="卡门">卡门</a>
+              </div>
+              <div class="author">
+                [法] 梅里美
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  卡门
+                </h4>
+                <p>
+                  <span class="author">
+                    [法] 梅里美
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    云南人民出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  内容简介（产品描述）：
+《卡门》，这一次我们不歌颂道德，而且我们鄙视和道德有关的一切，规则，法律，人情世故，统统被踩在脚底下加以唾弃。我们在众生之间，选择成为“恶”，还要从这“恶”里开出花来。在爱你的时候，愿意为了你去死。在不爱你的时候，也可以用死来换取离开你的自由。
+除非灵魂说不，否则没有什么能够阻挡。
+编辑推荐
+◇歌剧《卡门》就改编自该篇小说...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26889364/?icn=index-latestbook-subject" title="英国皇家植物园植物画教程">
+                <img src="https://img3.doubanio.com/lpic/s29087392.jpg" class=""
+                  width="106px" height="158px" alt="英国皇家植物园植物画教程">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26889364/?icn=index-latestbook-subject"
+                  title="英国皇家植物园植物画教程">英国皇家植物园植物画教程</a>
+              </div>
+              <div class="author">
+                [英]克丽斯特贝尔·金
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  英国皇家植物园植物画教程
+                </h4>
+                <p>
+                  <span class="author">
+                    [英]克丽斯特贝尔·金
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    北京联合出版公司·后浪出版公司
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  英国皇家植物园权威画师亲授技巧
+全方位讲解科学植物画创作方法
+...................
+※编辑推荐※
+☆ 来自植物学权威研究机构的英国皇家植物园，同时拥有植物学和科学插画两个学位的驻园插画师亲身示范。
+☆ 书中部分图谱源自拥有两百多年历史的植物学杂志《柯蒂斯植物学杂志》，具有很高的参考价值。
+☆ 从选取对象、写生技巧、修改画稿、保存标本乃至旅途写生以及出版经验等诸多细...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26876999/?icn=index-latestbook-subject" title="爱的告别式">
+                <img src="https://img1.doubanio.com/lpic/s29101707.jpg" class=""
+                  width="106px" height="158px" alt="爱的告别式">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26876999/?icn=index-latestbook-subject"
+                  title="爱的告别式">爱的告别式</a>
+              </div>
+              <div class="author">
+                [日] 乾胡桃
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  爱的告别式
+                </h4>
+                <p>
+                  <span class="author">
+                    [日] 乾胡桃
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    现代出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  可以看作是《爱的成人式》的姐妹篇。本作的主人公里谷正明在与家境优越的大小姐内田春香开始交往后，邂逅了女招待半井美奈子。相貌过于相似的春香和美奈子，两人到底是什么关系呢？是同一人物吗？尽管存在着这样的谜题，一般推理小说中常发生的犯罪情节果然还是没有出现。本作的故事焦点在于正明、春香和美奈子之间三角关系的去向，是一部恋爱色彩很强的作品。
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26879325/?icn=index-latestbook-subject" title="杜拉斯谈杜拉斯">
+                <img src="https://img3.doubanio.com/lpic/s29137800.jpg" class=""
+                  width="106px" height="158px" alt="杜拉斯谈杜拉斯">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26879325/?icn=index-latestbook-subject"
+                  title="杜拉斯谈杜拉斯">杜拉斯谈杜拉斯</a>
+              </div>
+              <div class="author">
+                [法] 玛格丽特·杜拉斯
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  杜拉斯谈杜拉斯
+                </h4>
+                <p>
+                  <span class="author">
+                    [法] 玛格丽特·杜拉斯
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    广西师范大学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  【悬而未决的激情，沉吟至今的杜拉斯】
+当杜拉斯谈论杜拉斯时，她在谈论些什么？ 从 她喃喃絮语的异乡童年，到她高声独白的创作生涯，从写作、爱情再到日常生活，晚年的杜拉斯谈论着自己一生的故事，却又留下无数悬而未决的想象。从西贡到巴黎，从女儿、妻子、母亲和情人的数重性别身份，再到写作、导演、编剧和戏剧之间的艺术跨界……杜拉斯自如游走于身份与疆域、真...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26897973/?icn=index-latestbook-subject" title="中国特色的译文读者">
+                <img src="https://img3.doubanio.com/lpic/s29113141.jpg" class=""
+                  width="106px" height="158px" alt="中国特色的译文读者">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26897973/?icn=index-latestbook-subject"
+                  title="中国特色的译文读者">中国特色的译文读者</a>
+              </div>
+              <div class="author">
+                沈诞琦
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  中国特色的译文读者
+                </h4>
+                <p>
+                  <span class="author">
+                    沈诞琦
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    湖南文艺出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  ●才女、青年作家沈诞琦首部小说集
+继非虚构集《自由的老虎》《波士顿人》后最新力作。沈诞琦以老练的笔触、犀利的视角、精巧的小说构思，写就了这部环环相扣的短篇小说集。
+在翻译中迷失的爱，被种种问题延迟的高潮，疾病发明家，陌生女人的来信，意图终结所有孤独的作家，从不拍照的摄影师……不同时空中的故事，有着相同的孤独。
+●金宇澄、刘瑜、张悦然、苗炜等人倾...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26840568/?icn=index-latestbook-subject" title="草疯长">
+                <img src="https://img1.doubanio.com/lpic/s29124387.jpg" class=""
+                  width="106px" height="158px" alt="草疯长">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26840568/?icn=index-latestbook-subject"
+                  title="草疯长">草疯长</a>
+              </div>
+              <div class="author">
+                [日]今村昌平
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  草疯长
+                </h4>
+                <p>
+                  <span class="author">
+                    [日]今村昌平
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    新星出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  日本仅有的一位两次获得戛纳金棕榈奖的导演
+.
+日本新浪潮领军者今村昌平 自传性随笔集 中文版首次出版
+.
+今村昌平师从小津安二郎，在电影表现手法上既有传承的一面，又突破了传统束缚，凭借先锋反叛的风格，与大岛渚等人成为日本电影新浪潮的领军者，并以《鳗鱼》和《楢山节考》两度荣获戛纳电影节金棕榈大奖。
+他善于从生、死、性这些层面出发，挖掘根植于日本文化中的生死...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26895254/?icn=index-latestbook-subject" title="雪中的印记">
+                <img src="https://img5.doubanio.com/lpic/s29135206.jpg" class=""
+                  width="106px" height="158px" alt="雪中的印记">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26895254/?icn=index-latestbook-subject"
+                  title="雪中的印记">雪中的印记</a>
+              </div>
+              <div class="author">
+                [英] 特蕾西·里斯
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  雪中的印记
+                </h4>
+                <p>
+                  <span class="author">
+                    [英] 特蕾西·里斯
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11-11
+                  </span>
+                  /
+                  <span class="publisher">
+                    广西科学技术出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  她躺在冰冷的雪床上，
+她尖叫着，好像在跟整个世界较劲。
+她因雪而得名，然而在十七年的漫长岁月中，
+她的身份也如白雪一般，只是一片空白。
+她终于离开了那唯一的，也是让人痛恨的家，
+为了一封信，一个承若。
+当她终于踏上孤独的寻宝之旅时，
+外面的世界远非她想象的模样，
+即便你有了漂亮的衣服，有了财富，有娴雅的言谈，
+人们依然嘲笑你的卑微的出身；
+当她在流言蜚语和冷...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26893634/?icn=index-latestbook-subject" title="树之生命木之心">
+                <img src="https://img3.doubanio.com/lpic/s29103053.jpg" class=""
+                  width="106px" height="158px" alt="树之生命木之心">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26893634/?icn=index-latestbook-subject"
+                  title="树之生命木之心">树之生命木之心</a>
+              </div>
+              <div class="author">
+                [日]西冈常一&nbsp;/&nbsp;小川三夫&nbsp;/&nbsp;盐野米松
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  树之生命木之心
+                </h4>
+                <p>
+                  <span class="author">
+                    [日]西冈常一&amp;nbsp;小川三夫&amp;nbsp;盐野米松
+                  </span>
+                  /
+                  <span class="year">
+                    2016-10
+                  </span>
+                  /
+                  <span class="publisher">
+                    理想国 | 广西师范大学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  本书是著名作家盐野米松，对日本师徒三代宫殿木匠持续十年的采访笔录，分为天、地、人三卷。日本最后的宫殿大木匠西冈常一全心投入古建的一生，其唯一继承人小川三夫创建要让木匠吃饱饭的“鵤工舍”的历程，二十个年轻学徒让手艺长进体内的成长故事，天地人三卷不仅呈现延续了一千三百年的日本古建智慧与匠人之魂，而且纪录片式地讲述了一门古老技艺在现代的传承。同...
+                </p>
+              </div>
+            </div>
+          </li>
+          
+  
+          <li class="">
+            <div class="cover">
+              <a href="https://book.douban.com/subject/26771731/?icn=index-latestbook-subject" title="朱鹮">
+                <img src="https://img5.doubanio.com/lpic/s29135536.jpg" class=""
+                  width="106px" height="158px" alt="朱鹮">
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a class="" href="https://book.douban.com/subject/26771731/?icn=index-latestbook-subject"
+                  title="朱鹮">朱鹮</a>
+              </div>
+              <div class="author">
+                [日] 阿部和重
+              </div>
+              <div class="more-meta">
+                <h4 class="title">
+                  朱鹮
+                </h4>
+                <p>
+                  <span class="author">
+                    [日] 阿部和重
+                  </span>
+                  /
+                  <span class="year">
+                    2016-11-1
+                  </span>
+                  /
+                  <span class="publisher">
+                    人民文学出版社
+                  </span>
+                </p>
+                <p class="abstract">
+                  
+                  少年鸨谷春生从小对朱鹮怀有不同一般的感情。他深居简出，沉溺于互联网，终日搜索朱鹮的信息。渐渐地，春生开始怀疑中国产的朱鹮能否代表日本，而世人对待朱鹮的态度也让他感到气愤和难过。
+春生觉得自己彻底被社会排斥。在他的心里，朱鹮的命运逐渐和自己的命运紧密连结在一起。他决定以一己之力解救朱鹮。春生制定了一个“朱鹮问题最终解决”计划，经过周密的准备之...
+                </p>
+              </div>
+            </div>
+          </li>
+    </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- douban ad begin -->
+  <div id="dale_book_home_left_top" class="ad-placeholder" style="margin:-30px 0 30px;"></div>
+  <!-- douban app end -->
+
+  
+  <div class="section popular-books">
+    <div class="hd">
+      <h2>
+        <span>最受关注图书榜</span>
+        <span class="link-more">
+          <a href="/chart?subcat=F&amp;icn=index-topchart-fiction">虚构类»</a>
+        </span>
+        <span class="link-more">
+          <a href="/chart?icn=index-topchart-nonfiction">非虚构类»</a>
+        </span>
+      </h2>
+    </div>
+    <div class="bd">
+      <ul class="list-col list-col2 list-summary s"
+        data-dstat-areaid="61" data-dstat-mode="click,expose">
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/subject/26831234/?icn=index-topchart-subject">
+        <img src="https://img1.doubanio.com/spic/s28872219.jpg"
+          alt="不属于我们的世纪" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_fiction'})"
+          href="https://book.douban.com/subject/26831234/?icn=index-topchart-subject" class="">不属于我们的世纪</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.9
+        </span>
+      </p>
+      <p class="author">
+        作者：[美] 马修·托马斯
+      </p>
+      <p class="book-list-classification">
+        美国文学&nbsp;/&nbsp;马修·托马斯&nbsp;/&nbsp;心灵
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          每一场费心筑梦之下的失败，都像碎片刺痛着我们的心。
+          (<a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/review/8120609/?icn=index-topchart-subject">Kyy评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/subject/26848740/?icn=index-topchart-subject">
+        <img src="https://img1.doubanio.com/spic/s28946557.jpg"
+          alt="认识电影 （全彩插图第12版）" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_nonfiction'})"
+          href="https://book.douban.com/subject/26848740/?icn=index-topchart-subject" class="">认识电影 （全彩插图第12版）</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar50 star-img">
+        </span>
+        <span class="average-rating">
+          9.4
+        </span>
+      </p>
+      <p class="author">
+        作者：[美]路易斯·贾内梯&nbsp;/&nbsp;Louis Giannetti
+      </p>
+      <p class="book-list-classification">
+        电影理论&nbsp;/&nbsp;艺术&nbsp;/&nbsp;后浪
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          对于现在身处这个连电影都还没看过几部就敢大喇喇写影评开公众号时代之中的你我来说，阅读《认识电影》有如黄袍加身。
+          (<a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/review/8094516/?icn=index-topchart-subject">森林里的小玄子评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/subject/26821461/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s29051355.jpg"
+          alt="北鸢" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_fiction'})"
+          href="https://book.douban.com/subject/26821461/?icn=index-topchart-subject" class="">北鸢</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          9.1
+        </span>
+      </p>
+      <p class="author">
+        作者：葛亮
+      </p>
+      <p class="book-list-classification">
+        中国文学&nbsp;/&nbsp;小说&nbsp;/&nbsp;葛亮
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          无论怎么飘零，这线没断，就是人生没断，线引人生，人生随线。
+          (<a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/review/8122777/?icn=index-topchart-subject">钟无艳评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/subject/26831788/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s28958480.jpg"
+          alt="旅行与读书" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_nonfiction'})"
+          href="https://book.douban.com/subject/26831788/?icn=index-topchart-subject" class="">旅行与读书</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.3
+        </span>
+      </p>
+      <p class="author">
+        作者：詹宏志
+      </p>
+      <p class="book-list-classification">
+        旅行&nbsp;/&nbsp;读书&nbsp;/&nbsp;随笔
+      </p>
+      <p class="extra-info">
+        
+          <span class="meta-label">有电子书</span>
+      </p>
+        
+        <p class="reviews">
+          书，作为一种线索或者牵引，催促你走出家门去看世界。
+          (<a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/review/8007090/?icn=index-topchart-subject">xcs评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/subject/26758235/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s29059382.jpg"
+          alt="离别的声音" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_fiction'})"
+          href="https://book.douban.com/subject/26758235/?icn=index-topchart-subject" class="">离别的声音</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.2
+        </span>
+      </p>
+      <p class="author">
+        作者：[日] 青山七惠
+      </p>
+      <p class="book-list-classification">
+        青山七惠&nbsp;/&nbsp;日本文学&nbsp;/&nbsp;淡淡·温度
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          我们都在经历，我们也都在失去，只是我们都不曾察觉。
+          (<a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/review/8084798/?icn=index-topchart-subject">Coco Lee评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/subject/26890235/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s29089620.jpg"
+          alt="白事会" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_nonfiction'})"
+          href="https://book.douban.com/subject/26890235/?icn=index-topchart-subject" class="">白事会</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.5
+        </span>
+      </p>
+      <p class="author">
+        作者：自然
+      </p>
+      <p class="book-list-classification">
+        死亡&nbsp;/&nbsp;豆瓣阅读&nbsp;/&nbsp;短篇集
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          我们可能始终无法正视身边人的离世，但是却可以淡然冷漠的去解读陌生人的死别。这是这个职业给予我们的勇气。
+          (<a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/review/8135786/?icn=index-topchart-subject">雏田评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/subject/26861583/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s29054611.jpg"
+          alt="不正常人类症候群" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_fiction'})"
+          href="https://book.douban.com/subject/26861583/?icn=index-topchart-subject" class="">不正常人类症候群</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar40 star-img">
+        </span>
+        <span class="average-rating">
+          8.2
+        </span>
+      </p>
+      <p class="author">
+        作者：张寒寺
+      </p>
+      <p class="book-list-classification">
+        脑洞&nbsp;/&nbsp;张寒寺&nbsp;/&nbsp;小说
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          心碎着的人们将会从这本书里找到安慰，而安慰人们的，正是那份相似的惆怅。
+          (<a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/review/8104700/?icn=index-topchart-subject">流水评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/subject/26850526/?icn=index-topchart-subject">
+        <img src="https://img1.doubanio.com/spic/s29027349.jpg"
+          alt="追时间的人" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_nonfiction'})"
+          href="https://book.douban.com/subject/26850526/?icn=index-topchart-subject" class="">追时间的人</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.6
+        </span>
+      </p>
+      <p class="author">
+        作者：阳志平&nbsp;/&nbsp;刘建鸿&nbsp;/&nbsp;吴宝沛&nbsp;/&nbsp;周亮&nbsp;/&nbsp;程乐华&nbsp;/&nbsp;陈虎平&nbsp;/&nbsp;赵昱鲲&nbsp;/&nbsp;卢立&nbsp;/&nbsp;王崇巍&nbsp;/&nbsp;陈忻&nbsp;/&nbsp;解慧超&nbsp;/&nbsp;安替&nbsp;/&nbsp;王佩&nbsp;/&nbsp;魏坤琳&nbsp;/&nbsp;戴俊毅
+      </p>
+      <p class="book-list-classification">
+        思维&nbsp;/&nbsp;知识管理&nbsp;/&nbsp;开智
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          去寻找你想进入领域的前端，去站得离太阳很近，你才能激发心中的炙烤与渴望，才能复活内在动机。
+          (<a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/review/8067734/?icn=index-topchart-subject">her评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/subject/26871657/?icn=index-topchart-subject">
+        <img src="https://img3.doubanio.com/spic/s29087840.jpg"
+          alt="第十三天" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_fiction'})"
+          href="https://book.douban.com/subject/26871657/?icn=index-topchart-subject" class="">第十三天</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          8.3
+        </span>
+          <span class="ml8">新上榜</span>
+      </p>
+      <p class="author">
+        作者：[德] 梁柯
+      </p>
+      <p class="book-list-classification">
+        悬疑推理&nbsp;/&nbsp;小说&nbsp;/&nbsp;豆瓣阅读
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          他的十三天是杀戮别人的十三天，却也是自我救赎的十三天。
+          (<a onclick="moreurl(this, {from:'pop_fiction'})" href="https://book.douban.com/review/8146476/?icn=index-topchart-subject">惘然评论</a>)
+        </p>
+    </div>
+  </li>
+
+              
+  
+
+  <li class="">
+    <div class="cover">
+      <a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/subject/26845199/?icn=index-topchart-subject">
+        <img src="https://img1.doubanio.com/spic/s28931109.jpg"
+          alt="大都会艺术博物馆指南" class="">
+      </a>
+    </div>
+    <div class="info">
+      <h4 class="title">
+        <a onclick="moreurl(this, {from:'pop_nonfiction'})"
+          href="https://book.douban.com/subject/26845199/?icn=index-topchart-subject" class="">大都会艺术博物馆指南</a>
+      </h4>
+      <p class="entry-star-small">
+        <span class="allstar45 star-img">
+        </span>
+        <span class="average-rating">
+          9.2
+        </span>
+      </p>
+      <p class="author">
+        作者：美国大都会艺术博物馆
+      </p>
+      <p class="book-list-classification">
+        艺术&nbsp;/&nbsp;博物馆&nbsp;/&nbsp;大都会艺术博物馆
+      </p>
+      <p class="extra-info">
+        
+      </p>
+        
+        <p class="reviews">
+          那些站在街边的博物馆们，它们让你觉得那些梵高的向日葵、莫奈的睡莲们，没有那么高高在上。
+          (<a onclick="moreurl(this, {from:'pop_nonfiction'})" href="https://book.douban.com/review/8075273/?icn=index-topchart-subject">喜儿喂鸭正经地评论</a>)
+        </p>
+    </div>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- douban ad begin -->
+  <div id="dale_book_home_left_middle" class="ad-placeholder" style="margin:-50px 0 30px;"></div>
+  <!-- douban app end -->
+
+  
+  <div class="section market-books">
+    <div class="hd">
+      <h2>
+        <span>豆瓣纸书</span>
+        <span class="link-more">
+          <a href="https://market.douban.com/book/">查看全部»</a>
+        </span>
+      </h2>
+    </div>
+    <div class="bd">
+      
+      <div class="top">
+        <div class="cover">
+          <a href="https://market.douban.com/book/yeats">
+            <div class="pic" style="background-image: url(https://img1.doubanio.com/view/freyr_page_photo/raw/public/1048.jpg)"></div>
+          </a>
+        </div>
+        <div id="market_books_header_info" class="info">
+          <p class="title">寂然的狂喜
+            <span class="price">￥98.00</span>
+            <span class="free_delivery">／包邮</span>
+          </p>
+          <p class="desc indent-paragraph" data-row="4">迄今最美的叶芝诗集，全世界33位艺术家被叶芝点燃的艺术灵感，建造了诗与艺术交相辉印的纸上美术馆。</p>
+        </div>
+      </div>
+      <ul class="list-col list-col5">
+          <li>
+            <div class="cover">
+              <a href="https://market.douban.com/book/maocidian" target="_blank">
+                <img src="https://img3.doubanio.com/view/freyr_page_photo/raw/public/1003.jpg" width="106" height="140" alt="猫的私人词典"/>
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a href="https://market.douban.com/book/maocidian" target="_blank">猫的私人词典</a>
+              </div>
+              <div class="price">￥78.00</div>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <a href="https://market.douban.com/book/deepdarkfears" target="_blank">
+                <img src="https://img5.doubanio.com/view/freyr_page_photo/raw/public/986.jpg" width="106" height="140" alt="人人都有妄想症"/>
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a href="https://market.douban.com/book/deepdarkfears" target="_blank">人人都有妄想症</a>
+              </div>
+              <div class="price">￥32.00</div>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <a href="https://market.douban.com/book/frameman" target="_blank">
+                <img src="https://img1.doubanio.com/view/freyr_page_photo/raw/public/987.jpg" width="106" height="140" alt="画框里的男人装"/>
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a href="https://market.douban.com/book/frameman" target="_blank">画框里的男人装</a>
+              </div>
+              <div class="price">￥38.00</div>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <a href="https://market.douban.com/book/woodyallen" target="_blank">
+                <img src="https://img3.doubanio.com/view/freyr_page_photo/raw/public/990.jpg" width="106" height="140" alt="伍迪·艾伦谈话录"/>
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a href="https://market.douban.com/book/woodyallen" target="_blank">伍迪·艾伦谈话录</a>
+              </div>
+              <div class="price">￥68.00</div>
+            </div>
+          </li>
+          <li>
+            <div class="cover">
+              <a href="https://market.douban.com/book/huazairenxin" target="_blank">
+                <img src="https://img3.doubanio.com/view/freyr_page_photo/raw/public/813.jpg" width="106" height="140" alt="画在人心的苦闷上"/>
+              </a>
+            </div>
+            <div class="info">
+              <div class="title">
+                <a href="https://market.douban.com/book/huazairenxin" target="_blank">画在人心的苦闷上</a>
+              </div>
+              <div class="price">￥58.00</div>
+            </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+
+  
+  <div class="section ebook-area">
+    <div class="hd">
+      
+  <h2 class=''>
+    <span class="">电子图书</span>
+      <span class="link-more">
+        <a class="" href="https://read.douban.com/ebooks?dcs=book-intro&amp;dcm=douban"
+           target=_blank>查看全部»</a>
+      </span>
+  </h2>
+
+    </div>
+    <div class="bd">
+      
+
+
+      <div class="">
+      
+  <div class="sub-section ">
+    <div class="sub-hd ">
+      <h3>
+        热门电子图书
+        <span class="more-info">
+            <a href="https://read.douban.com/ebooks/category/all/?sort=top&amp;dcs=book-hot&amp;dcm=douban&amp;dct=read-more" target="_blank">
+              更多&#187;
+            </a>
+        </span>
+      </h3>
+    </div>
+    <div class="sub-bd" >
+      <ul class="list-col list-col5">
+        
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/27134970/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="哈利·波特与被诅咒的孩子">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/27134970.jpg?v=1477636711.0" alt="哈利·波特与被诅咒的孩子"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/27134970/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="哈利·波特与被诅咒的孩子" target="_blank">
+          哈利·波特与被诅咒的孩子
+        </a>
+      </div>
+      <div class="price">
+          29.37元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          哈利·波特与被诅咒的孩子
+        </h4>
+        <p>
+          <span class="author">
+            约翰·蒂法尼 / 杰克·索恩 / J.K.罗琳
+          </span> / <span class="year">
+            2016-10
+          </span> / <span class="publisher">
+            人民文学出版社
+          </span> / <span class="price">
+              29.37元
+          </span>
+        </p>
+        <p class="abstract">
+          《哈利·波特与被诅咒的孩子》以J.K.罗琳、约翰·蒂法尼和杰克·索恩创作的全新故事为基础，是“哈利·波特”系列的第八个故事，是一部由杰克·索恩撰写的全新剧本，也是第一个被搬上舞台的“哈利·波特”官方故事。舞台剧的全球首演于2016年7月30日在伦敦西区举行。身为“大难不死的男孩”，哈利·波特一直生活得很艰难。如今他是一个超负荷工作的魔法部雇员，一个...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/26707082/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="假面饭店（新修珍藏版）">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/26707082.jpg?v=1476618081.0" alt="假面饭店（新修珍藏版）"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/26707082/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="假面饭店（新修珍藏版）" target="_blank">
+          假面饭店（新修珍藏版）
+        </a>
+      </div>
+      <div class="price">
+          11.86元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          假面饭店（新修珍藏版）
+        </h4>
+        <p>
+          <span class="author">
+            东野圭吾
+          </span> / <span class="year">
+            2016-9-1
+          </span> / <span class="publisher">
+            南海出版公司
+          </span> / <span class="price">
+              11.86元
+          </span>
+        </p>
+        <p class="abstract">
+          东京都内发生了三起难以理解的连续杀人事件。嫌疑犯杳无踪迹，警方只能从现场留下的暗号推断出，下一次犯罪现场将在东京柯尔特西亚大饭店。 
+搜查一课的年轻刑警新田浩介化装成饭店员工潜入搜查，配合他的是饭店的资深前台——山岸尚美。因为工作理念的差异，二人冲突不断，然而在一次次矛盾产生和化解的过程中，二人逐渐建立起了深厚的信任。 
+与此同时，他们也在一步...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/25807592/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="夏目友人帐">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/25807592.jpg?v=1474620441.0" alt="夏目友人帐"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/25807592/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="夏目友人帐" target="_blank">
+          夏目友人帐
+        </a>
+      </div>
+      <div class="price">
+          6.99元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          夏目友人帐
+        </h4>
+        <p>
+          <span class="author">
+            村井贞之
+          </span> / <span class="year">
+            2016-9-1
+          </span> / <span class="publisher">
+            百花洲文艺出版社
+          </span> / <span class="price">
+              6.99元
+          </span>
+        </p>
+        <p class="abstract">
+          风靡中日，感动无数人的“治愈系”漫画
+首次纪念小说中文珍藏版，
+再现漫画中那份温暖的感动和治愈！
+漫画原著者——绿川幸亲子手绘封面及内页插画！
+
+只要你有想见的人，就一定不会孤单。无论是人还是妖怪，只要心意相通都是一样的。
+本书为参与动画《夏目友人帐》创作的脚本师村井贞之所撰写的三篇原创故事。曾经治愈过无数人的漫画，现在用文字的形式重新呈现。愿你们被...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/4892552/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="尸语者：公安厅从未公开的法医禁忌档案 ">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/4892552.jpg?v=1405787434.0" alt="尸语者：公安厅从未公开的法医禁忌档案 "
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/4892552/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="尸语者：公安厅从未公开的法医禁忌档案 " target="_blank">
+          尸语者：公安厅从未公开的法医禁忌档案 
+        </a>
+      </div>
+      <div class="price">
+          6.00元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          尸语者：公安厅从未公开的法医禁忌档案 
+        </h4>
+        <p>
+          <span class="author">
+            法医秦明
+          </span> / <span class="year">
+            2012-10
+          </span> / <span class="publisher">
+            湖南文艺出版社
+          </span> / <span class="price">
+              6.00元
+          </span>
+        </p>
+        <p class="abstract">
+          《尸语者：公安厅从未公开的法医禁忌档案》，残忍，变态，惊悚、刺激，震撼！最重口味的案发现场，挑战最强悍的心理底线。
+
+ 20个挑战心理极限的重口味案发现场；20份公安厅从未公开的法医禁忌档案；残忍、变态，惊悚、刺激、真实、震撼……
+尸语者，与死者朝夕相处的神秘职业，即将剖开震撼人心的亡灵之声！
+
+秦明，主检法医师，入行较早，经验颇丰，绰号“老秦”。阅尸...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/26810749/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="地狱">
+        <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/26810749.jpg?v=1476783123.0" alt="地狱"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/26810749/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="地狱" target="_blank">
+          地狱
+        </a>
+      </div>
+      <div class="price">
+          9.99元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          地狱
+        </h4>
+        <p>
+          <span class="author">
+            (美)丹·布朗
+          </span> / <span class="year">
+            2013-12
+          </span> / <span class="publisher">
+            人民文学出版社
+          </span> / <span class="price">
+              9.99元
+          </span>
+        </p>
+        <p class="abstract">
+          根据《地狱》拍摄的、汤姆•汉克斯主演电影《但丁密码》将于10月28日在国内上映。
+继全球风靡的《达•芬奇密码》、《天使与魔鬼》、《失落的秘符》之后，丹•布朗对历史、艺术、密码与符号的运用已出神入化。这一次，丹•布朗再次选取这些标志性元素，精巧地编织出他迄今筹码最高的小说——《地狱》。
+
+哈佛大学符号学家罗伯特•兰登头疼欲裂地从佛罗伦萨一家医院的病...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/18208965/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="月亮和六便士">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/18208965.jpg?v=1453685205.0" alt="月亮和六便士"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/18208965/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="月亮和六便士" target="_blank">
+          月亮和六便士
+        </a>
+      </div>
+      <div class="price">
+          5.99元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          月亮和六便士
+        </h4>
+        <p>
+          <span class="author">
+            毛姆
+          </span> / <span class="year">
+            2016-1-20
+          </span> / <span class="publisher">
+            天津人民出版社
+          </span> / <span class="price">
+              5.99元
+          </span>
+        </p>
+        <p class="abstract">
+          书中的主人公“我”是伦敦怀才不遇的作家，偶然间认识了一位证券经纪人，对方在人届中年后突然响应内心的呼唤，离经叛道舍弃一切，先是奔赴巴黎，后又到南太平洋的塔希提岛与土著人一起生活，全身心投入绘画，并在死后声名大噪。“我”在他成名后开始追溯与艺术家家曾经的来往与对方之后的人生经历。艺术家的故事以生极落魄、死备哀荣的法国后印象派画家高更的生平为...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/5083852/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="自私的基因">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/5083852.jpg?v=1406971059.0" alt="自私的基因"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/5083852/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="自私的基因" target="_blank">
+          自私的基因
+        </a>
+      </div>
+      <div class="price">
+          9.99元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          自私的基因
+        </h4>
+        <p>
+          <span class="author">
+            [英]理查德·道金斯
+          </span> / <span class="year">
+            2012-9
+          </span> / <span class="publisher">
+            中信出版社
+          </span> / <span class="price">
+              9.99元
+          </span>
+        </p>
+        <p class="abstract">
+          《自私的基因》是20世纪最经典的著作，这版三十周年纪念版，在前版本基础上有两章增补和修订。我们从哪里来，又将到哪里去。生命有何意义，我们该如何认知自己？《自私的基因》充满想象力。任何生物，包括我们自己，都只是求生的机器。这本书是实实在在的认知科学，复制、变异和淘汰简单的 三种机制可以演变出所有大千世界生命现象里的林林总总。
+
+道金斯在《自私的基...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/20371679/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="什么是自由什么是爱">
+        <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/20371679.jpg?v=1460605007.0" alt="什么是自由什么是爱"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/20371679/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="什么是自由什么是爱" target="_blank">
+          什么是自由什么是爱
+        </a>
+      </div>
+      <div class="price">
+          9.00元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          什么是自由什么是爱
+        </h4>
+        <p>
+          <span class="author">
+            水木丁
+          </span> / <span class="year">
+            2016-4
+          </span> / <span class="publisher">
+            理想国 | 广西师范大学出版社
+          </span> / <span class="price">
+              9.00元
+          </span>
+        </p>
+        <p class="abstract">
+          本书是水木丁畅销随笔集《只愿你曾被这世界温柔相待》的姊妹篇，收录关于情感、生活与阅读的散文随笔五十余篇。水木丁坦言：“这次在整理书稿的过程中，我发现自己早已不是当初的那个我，从一心只想逃离出世，到坦然地入世，这恰恰是写作带给我的潜移默化的转变。”
+延续《只愿你曾被这世界温柔相待》的风格，作者从现实生活里、从情感经验之中、从阅读思考之间，引发...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/1550448/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="仿生人会梦见电子羊吗？">
+        <img src="https://img1.doubanio.com/view/ark_article_cover/retina/public/1550448.jpg?v=1395394337.0" alt="仿生人会梦见电子羊吗？"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/1550448/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="仿生人会梦见电子羊吗？" target="_blank">
+          仿生人会梦见电子羊吗？
+        </a>
+      </div>
+      <div class="price">
+          6.93元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          仿生人会梦见电子羊吗？
+        </h4>
+        <p>
+          <span class="author">
+            (美)菲利普·迪克
+          </span> / <span class="year">
+            2013-9
+          </span> / <span class="publisher">
+            译林出版社
+          </span> / <span class="price">
+              6.93元
+          </span>
+        </p>
+        <p class="abstract">
+          核战后，放射尘让地球上的动物濒临灭绝，地球已不再适合人类居住。为了鼓励残存的人口移民，政府承诺，只要移民到外 星球，就可以为每个人自动配备一个仿生人帮助其生活。仿生人不满足于被人类奴役的现状，想方设法逃回地球。
+主人公里克·德卡德是一名专门追捕逃亡仿生人的赏金猎人。在一次 追捕行动中，里克遭遇了新型仿生人前所未有的挑战。九死之后，能否一生？在...
+        </p>
+      </div>
+    </div>
+  </li>
+
+          
+          
+  
+  <li class="">
+    <div class="cover">
+      <a href="https://read.douban.com/ebook/13302885/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" target="_blank" title="一个人的好天气">
+        <img src="https://img3.doubanio.com/view/ark_article_cover/retina/public/13302885.jpg?v=1442300710.0" alt="一个人的好天气"
+          width="106px" height="158px">
+      </a>
+    </div>
+    <div class="info">
+      <div class="title">
+        <a href="https://read.douban.com/ebook/13302885/?dcs=book-hot&amp;dcm=douban&amp;dct=read-subject" title="一个人的好天气" target="_blank">
+          一个人的好天气
+        </a>
+      </div>
+      <div class="price">
+          9.60元
+      </div>
+      <div class="more-meta">
+        <h4 class="title">
+          一个人的好天气
+        </h4>
+        <p>
+          <span class="author">
+            [日]青山七惠
+          </span> / <span class="year">
+            2011-3
+          </span> / <span class="publisher">
+            上海译文出版社
+          </span> / <span class="price">
+              9.60元
+          </span>
+        </p>
+        <p class="abstract">
+          内容简介：就这样，我不断地更换认识的人，也不断地使自己进入不认识的人们之中去。我既不悲观，也不乐观，只是每天早上睁开眼睛，迎接新的一天，一个人努力过下去。
+
+
+
+青山七惠（1983- ），日本新锐小说家，生于埼玉县熊谷市，筑波大学毕业。2005年，凭借小说处女作《窗灯》获第42届日本文艺奖，在文学界崭露头角。2007年，以《一个人的好天气》荣膺第136届芥川龙之...
+        </p>
+      </div>
+    </div>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+  
+
+
+  <div class="section popular-authors">
+    <div class="hd">
+      
+  <h2 class=''>
+    <span class="">书评人</span>
+      <span class="link-more">
+        <a class="" href="https://book.douban.com/review/best/?icn=index-reviewer"
+          >进入书评专区»</a>
+      </span>
+  </h2>
+
+    </div>
+    <div class="bd">
+      <ul class="entry-list-col2s s "
+        data-dstat-areaid="55" data-dstat-mode="click,expose">
+                
+  
+  <li class="noline">
+    <a onclick="moreurl(this, {from:'revauthor'})" href="https://www.douban.com/people/53672944/?icn=index-reviewer">
+      <img class="userface" src="https://img3.doubanio.com/icon/u53672944-12.jpg" alt="喵了个咪"/>
+    </a>
+    <div class="fleft w210">
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://www.douban.com/people/53672944/?icn=index-reviewer">喵了个咪</a>
+      </p>
+      <p class="entry-star-small clearfix">
+        <span class="fleft">
+          评论《太空之眼》
+        </span>
+      </p>
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://book.douban.com/review/8164609/?icn=index-reviewer">哈勃，人类看到宇宙深处的眼睛</a>
+      </p>
+      <p class="color-gray">
+        <span class="">17有用&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="">2016-11-09</span>
+      </p>
+    </div>
+  </li>
+
+                
+  
+  <li class="noline">
+    <a onclick="moreurl(this, {from:'revauthor'})" href="https://www.douban.com/people/48051798/?icn=index-reviewer">
+      <img class="userface" src="https://img3.doubanio.com/icon/u48051798-4.jpg" alt="米虫一默"/>
+    </a>
+    <div class="fleft w210">
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://www.douban.com/people/48051798/?icn=index-reviewer">米虫一默</a>
+      </p>
+      <p class="entry-star-small clearfix">
+        <span class="fleft">
+          评论《白日之梦》
+        </span>
+      </p>
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://book.douban.com/review/8165960/?icn=index-reviewer">枕上梦心上书——白日之梦</a>
+      </p>
+      <p class="color-gray">
+        <span class="">7有用&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="">2016-11-10</span>
+      </p>
+    </div>
+  </li>
+
+                
+  
+  <li class="noline">
+    <a onclick="moreurl(this, {from:'revauthor'})" href="https://www.douban.com/people/81527250/">
+      <img class="userface" src="https://img3.doubanio.com/icon/u81527250-13.jpg" alt="钟无艳"/>
+    </a>
+    <div class="fleft w210">
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://www.douban.com/people/81527250/">钟无艳</a>
+      </p>
+      <p class="entry-star-small clearfix">
+        <span class="fleft">
+          评论《丝绸之路》
+        </span>
+      </p>
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://book.douban.com/review/8166190/">we are the world</a>
+      </p>
+      <p class="color-gray">
+        <span class="">0有用&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="">2016-11-10</span>
+      </p>
+    </div>
+  </li>
+
+                
+  
+  <li class="noline">
+    <a onclick="moreurl(this, {from:'revauthor'})" href="https://www.douban.com/people/yuyan545/">
+      <img class="userface" src="https://img1.doubanio.com/icon/u1025094-38.jpg" alt="亚比煞Aimee"/>
+    </a>
+    <div class="fleft w210">
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://www.douban.com/people/yuyan545/">亚比煞Aimee</a>
+      </p>
+      <p class="entry-star-small clearfix">
+        <span class="fleft">
+          评论《不朽》
+        </span>
+      </p>
+      <p>
+        <a class="" onclick="moreurl(this, {from:'revauthor'})"
+          href="https://book.douban.com/review/8153115/">昆德拉：你经得起不朽的审视吗？</a>
+      </p>
+      <p class="color-gray">
+        <span class="">631有用&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span class="">2016-11-01</span>
+      </p>
+    </div>
+  </li>
+
+      </ul>
+    </div>
+  </div>
+
+</div>
+      <div class="aside">
+        
+  
+  
+
+  <!-- douban ad begin -->
+  <div id="dale_book_home_top_right" class="s ad-placeholder"
+    data-dstat-areaid="51" data-dstat-mode="click,expose"
+    style="margin-top: 30px;"></div>
+  <!-- douban ad end -->
+
+  <!-- douban ad begin -->
+  <div id="dale_book_home_top_right2" class="ad-placeholder"></div>
+  <!-- douban ad end -->
+
+  
+
+  
+
+  
+  <h2 class=''>
+    <span class="">热门标签</span>
+      <span class="link-more">
+        <a class="" href="/tag/?view=type&amp;icn=index-sorttags-all"
+          >所有热门标签»</a>
+      </span>
+  </h2>
+
+  <ul class="hot-tags-col5 s" data-dstat-areaid="54" data-dstat-mode="click,expose">
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                文学
+            </li>
+            <li>
+                <a href="/tag/小说" class="tag">小说</a>
+            </li>
+            <li>
+                <a href="/tag/随笔" class="tag">随笔</a>
+            </li>
+            <li>
+                <a href="/tag/日本文学" class="tag">日本文学</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/散文" class="tag">散文</a>
+            </li>
+            <li>
+                <a href="/tag/诗歌" class="tag">诗歌</a>
+            </li>
+            <li>
+                <a href="/tag/童话" class="tag">童话</a>
+            </li>
+            <li>
+                <a href="/tag/名著" class="tag">名著</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/港台" class="tag">港台</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#文学" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                流行
+            </li>
+            <li>
+                <a href="/tag/漫画" class="tag">漫画</a>
+            </li>
+            <li>
+                <a href="/tag/绘本" class="tag">绘本</a>
+            </li>
+            <li>
+                <a href="/tag/推理" class="tag">推理</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/青春" class="tag">青春</a>
+            </li>
+            <li>
+                <a href="/tag/言情" class="tag">言情</a>
+            </li>
+            <li>
+                <a href="/tag/科幻" class="tag">科幻</a>
+            </li>
+            <li>
+                <a href="/tag/武侠" class="tag">武侠</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/奇幻" class="tag">奇幻</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#流行" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                文化
+            </li>
+            <li>
+                <a href="/tag/历史" class="tag">历史</a>
+            </li>
+            <li>
+                <a href="/tag/哲学" class="tag">哲学</a>
+            </li>
+            <li>
+                <a href="/tag/传记" class="tag">传记</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/设计" class="tag">设计</a>
+            </li>
+            <li>
+                <a href="/tag/建筑" class="tag">建筑</a>
+            </li>
+            <li>
+                <a href="/tag/电影" class="tag">电影</a>
+            </li>
+            <li>
+                <a href="/tag/回忆录" class="tag">回忆录</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/音乐" class="tag">音乐</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#文化" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                生活
+            </li>
+            <li>
+                <a href="/tag/旅行" class="tag">旅行</a>
+            </li>
+            <li>
+                <a href="/tag/励志" class="tag">励志</a>
+            </li>
+            <li>
+                <a href="/tag/职场" class="tag">职场</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/美食" class="tag">美食</a>
+            </li>
+            <li>
+                <a href="/tag/教育" class="tag">教育</a>
+            </li>
+            <li>
+                <a href="/tag/灵修" class="tag">灵修</a>
+            </li>
+            <li>
+                <a href="/tag/健康" class="tag">健康</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/家居" class="tag">家居</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#生活" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                经管
+            </li>
+            <li>
+                <a href="/tag/经济学" class="tag">经济学</a>
+            </li>
+            <li>
+                <a href="/tag/管理" class="tag">管理</a>
+            </li>
+            <li>
+                <a href="/tag/商业" class="tag">商业</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/金融" class="tag">金融</a>
+            </li>
+            <li>
+                <a href="/tag/营销" class="tag">营销</a>
+            </li>
+            <li>
+                <a href="/tag/理财" class="tag">理财</a>
+            </li>
+            <li>
+                <a href="/tag/股票" class="tag">股票</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/企业史" class="tag">企业史</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#经管" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+      
+    
+
+    <li>
+        <ul class="clearfix">
+            <li class="tag_title">
+                科技
+            </li>
+            <li>
+                <a href="/tag/科普" class="tag">科普</a>
+            </li>
+            <li>
+                <a href="/tag/互联网" class="tag">互联网</a>
+            </li>
+            <li>
+                <a href="/tag/编程" class="tag">编程</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/交互设计" class="tag">交互设计</a>
+            </li>
+            <li>
+                <a href="/tag/算法" class="tag">算法</a>
+            </li>
+            <li>
+                <a href="/tag/通信" class="tag">通信</a>
+            </li>
+            <li>
+                <a href="/tag/神经网络" class="tag">神经网络</a>
+            </li>
+            <li class="last">
+                  <a href="/tag/?view=type&amp;icn=index-sorttags-hot#科技" class="tag more_tag">更多》</a>
+            </li>
+        </ul>
+    </li>
+
+  </ul>
+
+
+  <!-- douban ad begin -->
+  <div id="dale_book_homepage_right_bottom" class="ad-placeholder"></div>
+  <!-- douban ad end -->
+
+    
+<div class="section weekly-top">
+    <div class="hd">
+        <h2>畅销图书榜</h2>
+    </div>
+    <div class="bd">
+        <ul class="nav-vendor">
+            <li class="on book-chart-hd" id="jd-book-chart-hd">
+                <img src="https://img3.doubanio.com/f/book/7fd9bf017a2b6c0349981f25700e2b71c12df7d0/pics/book/partner/jd_chart_hover.png" width="18" height="18"/>
+                <span>京东</span>
+            </li>
+            <li class="book-chart-hd" id="amazon-book-chart-hd">
+                <img src="https://img3.doubanio.com/f/book/a89c8398b6cf28ef20edfe1b069ee72917e2dd54/pics/book/partner/amazon_chart.png" width="18" height="18"/>
+                <span>亚马逊</span>
+            </li>
+            <li class="book-chart-hd" id="dangdang-book-chart-hd">
+                <img src="https://img3.doubanio.com/f/book/31b437b71ced2d15e1e110d6be26b070da8c0d4a/pics/book/partner/dangdang_chart.png" width="18" height="18"/>
+                <span>当当</span>
+            </li>
+        </ul>
+            <ul class="list list-ranking">
+                
+                <li class="item">
+                    <span class="rank-num">1.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/5437113/" class="name" target="_blank">窗边的小豆豆</a>
+                        <div class="author">[日] 黑柳彻子 著/岩崎千弘 图</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=1860&amp;pos=1&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxQAGwNVGF4KW1dbCCtSbV5GVyByGnZWbHsgQQ9PCk98D1orGQ4iBmUbXxQGFjdleikl%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsUABsDVRheCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=5437113" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">2.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26910579/" class="name" target="_blank">肖秀荣2017考研政治命题人冲刺8套卷</a>
+                        <div class="author">肖秀荣</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2160&amp;pos=2&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEQZRHF4XCyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQETA1IeWRwdS0IJRmsSfGRDEW4kC2dOAEtEUh1ZFns9YVp1Dh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBBsAVRNYEQQQAVErXCXbkrCDucnMnJjS3YxrJTIi%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsWAxYAUBlSCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=26910579" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">3.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/25747921/" class="name" target="_blank">从你的全世界路过</a>
+                        <div class="author">张嘉佳</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2480&amp;pos=3&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUAEA5THVsKW1dbCCs6VQoUfQZuPndncB0wYixvHEBXT1kdGQ4iBmUbXxQGFjdleikl%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVABAOUx1bCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=25747921" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">4.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26340138/" class="name" target="_blank">岛上书店</a>
+                        <div class="author">[美] 加布瑞埃拉·泽文</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2410&amp;pos=4&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgBTEloUBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIVAVwaWhMdS0IJRmtMRXZSFEM8bGEQTwBbOmlqaFkiTAdlDh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBhsEXR1dEgEaB1YrXCXbkrCDucnMnJjS3YxrJQM%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBRQOVBpdCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=26340138" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">5.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/25924253/" class="name" target="_blank">嫌疑人X的献身</a>
+                        <div class="author">东野圭吾</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2980&amp;pos=5&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJTE14UByJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXAV0eWhAdS0IJRmtqVxUAPR0mdWdFU1ZOPXN6U28TQQxlDh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBhsFVBpbEAISD1MrXCXbkrCDucnMnJjS3YxrJQM%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxQPUBpeCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=25924253" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">6.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/6082808/" class="name" target="_blank">百年孤独</a>
+                        <div class="author">[哥伦比亚] 加西亚·马尔克斯</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=3520&amp;pos=6&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxQFFg5SHlwKW1dbCCtBEV9pXRATB3VVVnAocAcXBWwFUnwdGQ4iBmUbXxQGFjdleikl%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsUBRYOUh5cCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=6082808" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">7.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/10763902/" class="name" target="_blank">偷影子的人</a>
+                        <div class="author">(法)马克·李维</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2050&amp;pos=7&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIBZRprFDJWWA1FBCVbV0IUEEULWldTCQQAQB1AWQkFWxUDEg5RGFwKW1dbCCsabmBQHQB7BndYRloKS11oChViBksdGQ4iBmUbXxQGFjdleikl%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVAxIOURhcCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=10763902" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">8.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26670709/" class="name" target="_blank">世界地图：跟爸爸一起去旅行</a>
+                        <div class="author">[英] 尼克·柯雷恩 著/[英] 大卫·迪恩 绘</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=3629&amp;pos=8&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgFVGFkdASJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIUB1YZUxYdS0IJRmt2ZnVnA1sadGFNTyJFXm8Ka2YKHhtTDh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBhsEXR1dHQoVAl0rXCXbkrCDucnMnJjS3YxrJQM%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBBIEVxNYCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=26670709" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">9.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/25862578/" class="name" target="_blank">解忧杂货店</a>
+                        <div class="author">(日)东野圭吾</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=2700&amp;pos=9&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgJRGFIQAyJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIXA1YSXhQdS0IJRmtPXGRuEk0YT2d5W10TBEFJVlUoWAVlDh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBhsEXRJbHAoVAFwrXCXbkrCDucnMnJjS3YxrJQM%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBxYEXB5aCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=25862578" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">10.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26647054/" class="name" target="_blank">小王子（纯美珍藏绘本）</a>
+                        <div class="author">[法] 安东尼·德·圣-埃克苏佩里</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=jingdong&amp;srcpage=bestseller&amp;price=3090&amp;pos=10&amp;url=http%3A%2F%2Funion.click.jd.com%2Fjdc%3Fe%3D%26p%3DAyIOZR5aEQISA1AYUyUCEgFcG1gSBCJDCkMFSjJLQhBaUAscSkIBR0ROVw1VC0dFFQIUDlUYXBMdS0IJRmscQVVhARkpU2ByYVROIUd6QW5Qcg51Dh43Uh5cEwUbBFIrWxEDFgNlKzpnMkBpja3tzaejG4Gx1MCKhTdUK1sQBhsEXR1fEgYaAVMrXCXbkrCDucnMnJjS3YxrJQM%253D%26t%3DW1dCFBBFC1pXUwkEAEAdQFkJBVsVBBsHVhxdCltXWwg%253D&amp;srcsubj=&amp;type=bkbuy&amp;subject=26647054" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+            </ul>
+            <ul class="list list-ranking">
+                
+                <li class="item">
+                    <span class="rank-num">1.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26802388/" class="name" target="_blank">自在独行</a>
+                        <div class="author">贾平凹</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">2.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26340138/" class="name" target="_blank">岛上书店</a>
+                        <div class="author">[美] 加布瑞埃拉·泽文</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">3.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26839300/" class="name" target="_blank">局外人</a>
+                        <div class="author">[法]加缪</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">4.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26284463/" class="name" target="_blank">皮特猫</a>
+                        <div class="author">[美] 艾瑞克•利温/[美]詹姆斯•迪安</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">5.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26576605/" class="name" target="_blank">这么慢，那么美</a>
+                        <div class="author">罗敷</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=bestseller&amp;price=2280&amp;pos=5&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2F%3Ftag%3Ddoubanphb-23%26asin%3DB0116GWQ58&amp;srcsubj=&amp;type=bkbuy&amp;subject=26576605" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">6.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26873638/" class="name" target="_blank">活着本来单纯</a>
+                        <div class="author">丰子恺</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">7.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26382433/" class="name" target="_blank">无声告白</a>
+                        <div class="author">[美] 伍绮诗</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">8.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26865749/" class="name" target="_blank">所谓情商高，就是会说话</a>
+                        <div class="author">佐佐木圭一</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">9.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26771878/" class="name" target="_blank">中国通史</a>
+                        <div class="author">吕思勉</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=joyo&amp;srcpage=bestseller&amp;price=2770&amp;pos=9&amp;url=http%3A%2F%2Fwww.amazon.cn%2Fmn%2FdetailApp%2Fref%3Dasc_df_B01CRX5N4K2394135%2F%3Fasin%3DB01CRX5N4K%26tag%3Ddoubanphb-23%26creative%3D2384%26creativeASIN%3DB01CRX5N4K%26linkCode%3Ddf0&amp;srcsubj=&amp;type=bkbuy&amp;subject=26771878" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">10.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26904500/" class="name" target="_blank">月亮和六便士</a>
+                        <div class="author">[英] 威廉·萨默赛特·毛姆</div>
+                    </div>
+                    <a href="" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+            </ul>
+            <ul class="list list-ranking">
+                
+                <li class="item">
+                    <span class="rank-num">1.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/4913064/" class="name" target="_blank">活着</a>
+                        <div class="author">余华</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1500&amp;pos=1&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s4913064%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22864990&amp;srcsubj=&amp;type=bkbuy&amp;subject=4913064" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">2.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/25862578/" class="name" target="_blank">解忧杂货店</a>
+                        <div class="author">(日)东野圭吾</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=2250&amp;pos=2&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25862578%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23464478&amp;srcsubj=&amp;type=bkbuy&amp;subject=25862578" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">3.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/19958089/" class="name" target="_blank">我们仨</a>
+                        <div class="author">杨绛</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1730&amp;pos=3&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s19958089%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22880790&amp;srcsubj=&amp;type=bkbuy&amp;subject=19958089" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">4.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26356948/" class="name" target="_blank">摆渡人</a>
+                        <div class="author">[英]克莱儿·麦克福尔</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=2320&amp;pos=4&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26356948%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23694647&amp;srcsubj=&amp;type=bkbuy&amp;subject=26356948" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">5.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26844348/" class="name" target="_blank">好吗好的</a>
+                        <div class="author">大冰</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1989&amp;pos=5&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26844348%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D24005779&amp;srcsubj=&amp;type=bkbuy&amp;subject=26844348" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">6.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/10554308/" class="name" target="_blank">白夜行</a>
+                        <div class="author">[日] 东野圭吾</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=2370&amp;pos=6&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s10554308%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D22935553&amp;srcsubj=&amp;type=bkbuy&amp;subject=10554308" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">7.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26738072/" class="name" target="_blank">这就是二十四节气</a>
+                        <div class="author">高春香 邵敏 著/许明振 李婧 绘</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=8500&amp;pos=7&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26738072%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23808035&amp;srcsubj=&amp;type=bkbuy&amp;subject=26738072" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">8.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/25747921/" class="name" target="_blank">从你的全世界路过</a>
+                        <div class="author">张嘉佳</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1800&amp;pos=8&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s25747921%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23353342&amp;srcsubj=&amp;type=bkbuy&amp;subject=25747921" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">9.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/1770782/" class="name" target="_blank">追风筝的人</a>
+                        <div class="author">[美] 卡勒德·胡赛尼</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1600&amp;pos=9&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s1770782%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23274638&amp;srcsubj=&amp;type=bkbuy&amp;subject=1770782" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+                
+                <li class="item">
+                    <span class="rank-num">10.</span>
+                    <div class="book-info">
+                        <a href="https://book.douban.com/subject/26340138/" class="name" target="_blank">岛上书店</a>
+                        <div class="author">[美] 加布瑞埃拉·泽文</div>
+                    </div>
+                    <a href="https://book.douban.com/link2/?pre=0&amp;vendor=dangdang&amp;srcpage=bestseller&amp;price=1750&amp;pos=10&amp;url=http%3A%2F%2Funion.dangdang.com%2Ftransfer.php%3Ffrom%3DP-306226-0-s26340138%26backurl%3Dhttp%3A%2F%2Fproduct.dangdang.com%2Fproduct.aspx%3Fproduct_id%3D23685329&amp;srcsubj=&amp;type=bkbuy&amp;subject=26340138" target="_blank"><span class="buy-button">去购买</span></a>
+                </li>
+            </ul>
+    </div>
+</div>
+
+
+
+  
+  
+
+  <div class="block5">
+    
+    
+  <h2 class=''>
+    <span class="">豆瓣图书250</span>
+      <span class="link-more">
+        <a class="" href="/top250?icn=index-book250-all"
+          >更多»</a>
+      </span>
+  </h2>
+
+    
+    <div class="content clearfix s" id="book_rec"
+      data-dstat-areaid="58"
+      data-dstat-mode="click,expose">
+          
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1786670/?icn=index-book250-subject">
+          <img src="https://img1.doubanio.com/spic/s2785398.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1786670/?icn=index-book250-subject">
+          百年孤独
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1205370/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s1469280.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1205370/?icn=index-book250-subject">
+          羊脂球
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/2340100/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s3403254.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/2340100/?icn=index-book250-subject">
+          遇见未知的自己
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+      <div class="clearfix rr" style="width:100%"></div>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1022238/?icn=index-book250-subject">
+          <img src="https://img5.doubanio.com/spic/s1074166.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1022238/?icn=index-book250-subject">
+          菊与刀
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1082154/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s23836852.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1082154/?icn=index-book250-subject">
+          活着
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1008988/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s1005875.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1008988/?icn=index-book250-subject">
+          了不起的盖茨比
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+      <div class="clearfix rr" style="width:100%"></div>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1026425/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s1024882.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1026425/?icn=index-book250-subject">
+          三重门
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/25984204/?icn=index-book250-subject">
+          <img src="https://img3.doubanio.com/spic/s27466554.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/25984204/?icn=index-book250-subject">
+          乖，摸摸头
+        </a>
+        <p class="extra-info">
+          
+  
+  <span class="meta-label">
+    有电子书
+  </span>
+
+        </p>
+      </dd>
+    </dl>
+    
+    <dl>
+      <dt>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1084336/?icn=index-book250-subject">
+          <img src="https://img1.doubanio.com/spic/s1237549.jpg" class="m_sub_img">
+        </a>
+      </dt>
+      <dd>
+        <a onclick="moreurl(this, {from:'top'})" href="https://book.douban.com/subject/1084336/?icn=index-book250-subject">
+          小王子
+        </a>
+        <p class="extra-info">
+          
+  
+        </p>
+      </dd>
+    </dl>
+      <div class="clearfix rr" style="width:100%"></div>
+
+    </div>
+  </div>
+
+  
+  <ul class="apply-links">
+    <li>
+      <span class="apply-editor">
+        <a href="https://book.douban.com/site/new_editor">
+          &gt;&nbsp;编辑申请
+        </a>
+      </span>
+      <span>
+        <a href="https://book.douban.com/site/new_publisher">
+          &gt;&nbsp;出版社申请
+        </a>
+      </span>
+    </li>
+  </ul>
+
+
+  <div class="contact mod">
+      <h2>关注我们</h2>
+      <ul class="embassy-list clearfix">
+          <li>
+              <a href="https://site.douban.com/book/" target="_blank" class="icon-embassy-site"></a>
+              <a href="https://site.douban.com/book/" target="_blank" class="primary-link">豆瓣小站</a>
+          </li>
+          <li>
+              <a href="http://weibo.com/doubandushu" target="_blank" class="icon-embassy-weibo"></a>
+              <a href="http://weibo.com/doubandushu" target="_blank" class="primary-link">微博</a>
+          </li>
+          <li>
+              <a class="icon-embassy-weixin">
+                  <div class="hover"><img class="home-qrcode" src="https://img3.doubanio.com/f/book/ee2d0bf8adc46ee0e1a53c28abf41a7a3b589e54/pics/book/home_qrcode@2x.jpg"></div>
+              </a>
+              <a class="primary-link" href="javascript:;">微信</a>
+          </li>
+      </ul>
+  </div>
+  <!-- douban app begin -->
+  <div class="s" data-dstat-areaid="60" data-dstat-mode="click,expose">
+    
+
+<style>
+    .qrcode-app {
+        margin: 20px 0;
+    }
+    .qrcode-app a.download {
+        display: block;
+        width: 300px;
+        height: 80px;
+        background: url(/pics/qrcode_app4@2x.png) no-repeat;
+        background-size: contain;
+        background-image: -webkit-image-set(url(/pics/qrcode_app4.png) 1x, url(/pics/qrcode_app4@2x.png) 2x);
+        background-image: -moz-image-set(url(/pics/qrcode_app4.png) 1x, url(/pics/qrcode_app4@2x.png) 2x);
+        background-image: -ms-image-set(url(/pics/qrcode_app4.png) 1x, url(/pics/qrcode_app4@2x.png) 2x);
+        background-image: -o-image-set(url(/pics/qrcode_app4.png) 1x, url(/pics/qrcode_app4@2x.png) 2x);
+    }
+</style>
+<div class="qrcode-app">
+    <a class="download" href="https://www.douban.com/doubanapp/app?channel=Db_Homepage_Bar&amp;direct_dl=1" target="_blank">
+    </a>
+</div>
+
+  </div>
+  <!-- douban app end -->
+
+  <!-- douban ad begin -->
+  <div id="dale_book_home_bottem_right" class="ad-placeholder"></div>
+  <!-- douban ad end -->
+
+      </div>
+      <div class="extra">
+        
+      </div>
+    </div>
+  </div>
+
+    
+  <div id="footer">
+    
+<span id="icp" class="fleft gray-link">
+    &copy; 2005－2016 douban.com, all rights reserved 北京豆网科技有限公司
+</span>
+
+<a href="https://www.douban.com/hnypt/variformcyst.py" style="display: none;"></a>
+
+<span class="fright">
+    <a href="https://www.douban.com/about">关于豆瓣</a>
+    · <a href="https://www.douban.com/jobs">在豆瓣工作</a>
+    · <a href="https://www.douban.com/about?topic=contactus">联系我们</a>
+    · <a href="https://www.douban.com/about?policy=disclaimer">免责声明</a>
+    
+    · <a href="https://help.douban.com/?app=book" target="_blank">帮助中心</a>
+    · <a href="https://book.douban.com/library_invitation">图书馆合作</a>
+    · <a href="https://www.douban.com/doubanapp/">移动应用</a>
+    · <a href="https://www.douban.com/partner/">豆瓣广告</a>
+</span>
+
+    <script src="https://img3.doubanio.com/f/book/7495d157b1564be6aae1d21c79280b5ea374400a/js/book/lib/do/init.js"
+      data-cfg-corelib="https://img3.doubanio.com/f/book/0495cb173e298c28593766009c7b0a953246c5b5/js/book/lib/jquery/jquery.js">
+    </script>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="https://img3.doubanio.com/misc/mixed_static/6640864defabee4e.js"></script>
+  <!-- mako -->
+  
+  <!-- douban ad begin -->
+  
+  
+
+
+
+
+    
+<script type="text/javascript">
+    (function (global) {
+        var newNode = global.document.createElement('script'),
+            existingNode = global.document.getElementsByTagName('script')[0],
+            adSource = '//erebor.douban.com/',
+            userId = '',
+            browserId = 'ICqjZddIsvc',
+            criteria = '3:/',
+            preview = '',
+            debug = false,
+            adSlots = ['dale_book_home_top_right', 'dale_book_home_top_right2', 'dale_book_home_left_middle', 'dale_book_home_bottem_right', 'dale_book_home_top_super_banner', 'dale_book_home_left_top', 'dale_book_homepage_right_bottom'];
+
+        global.DoubanAdRequest = {src: adSource, uid: userId, bid: browserId, crtr: criteria, prv: preview, debug: debug};
+        global.DoubanAdSlots = (global.DoubanAdSlots || []).concat(adSlots);
+
+        newNode.setAttribute('type', 'text/javascript');
+        newNode.setAttribute('src', 'https://img3.doubanio.com/f/shire/99a1c905fb5a6d46d8e742d60199e3a99414a580/js/ad.js');
+        newNode.setAttribute('async', true);
+        existingNode.parentNode.insertBefore(newNode, existingNode);
+    })(this);
+</script>
+
+
+
+
+
+
+
+
+
+
+  <!-- douban ad end -->
+  <script>
+    Do(function() {
+      $('.click-track').on('click', function(e) {
+        e.preventDefault()
+        var name = $(this).data('name')
+        moreurl(this, { from: name })
+      })
+    })
+  </script>
+
+  
+  
+  
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var p=(('https:' == document.location.protocol) ? 'https' : 'http'), u=p+'://fundin.douban.com/';
+    _paq.push(['setTrackerUrl', u+'piwik']);
+    _paq.push(['setSiteId', '100001']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; 
+    g.type='text/javascript';
+    g.defer=true; 
+    g.async=true; 
+    g.src=p+'://s.doubanio.com/dae/fundin/piwik.js';
+    s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+<script type="text/javascript">
+var setMethodWithNs = function(namespace) {
+  var ns = namespace ? namespace + '.' : ''
+    , fn = function(string) {
+        if(!ns) {return string}
+        return ns + string
+      }
+  return fn
+}
+
+var gaWithNamespace = function(fn, namespace) {
+  var method = setMethodWithNs(namespace)
+  fn.call(this, method)
+}
+
+var _gaq = _gaq || []
+  , accounts = [
+      { id: 'UA-7019765-1', namespace: 'douban' }
+    , { id: 'UA-7019765-16', namespace: '' }
+    ]
+  , gaInit = function(account) {
+      gaWithNamespace(function(method) {
+        gaInitFn.call(this, method, account)
+      }, account.namespace)
+    }
+  , gaInitFn = function(method, account) {
+      _gaq.push([method('_setAccount'), account.id])
+
+      
+  _gaq.push([method('_addOrganic'), 'google', 'q'])
+  _gaq.push([method('_addOrganic'), 'baidu', 'wd'])
+  _gaq.push([method('_addOrganic'), 'soso', 'w'])
+  _gaq.push([method('_addOrganic'), 'youdao', 'q'])
+  _gaq.push([method('_addOrganic'), 'so.360.cn', 'q'])
+  _gaq.push([method('_addOrganic'), 'sogou', 'query'])
+  if (account.namespace) {
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣'])
+    _gaq.push([method('_addIgnoredOrganic'), 'douban'])
+    _gaq.push([method('_addIgnoredOrganic'), '豆瓣网'])
+    _gaq.push([method('_addIgnoredOrganic'), 'www.douban.com'])
+  }
+
+      if (account.namespace === 'douban') {
+        _gaq.push([method('_setDomainName'), '.douban.com'])
+      }
+
+        _gaq.push([method('_setCustomVar'), 1, 'responsive_view_mode', 'desktop', 3])
+
+        _gaq.push([method('_setCustomVar'), 2, 'login_status', '0', 2]);
+
+      _gaq.push([method('_trackPageview')])
+    }
+
+for(var i = 0, l = accounts.length; i < l; i++) {
+  var account = accounts[i]
+  gaInit(account)
+}
+
+
+;(function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+})()
+</script>
+
+
+
+
+
+
+
+
+
+  <!-- sindar7c-docker-->
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
         "target": "es5",
-        "outDir": "dist"
+        "typeRoots": [
+            "node_modules/@types"
+        ]
     },
-    "exclude": [
-        "douban-api"
-    ]
+    "exclude": []
 }
